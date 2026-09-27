@@ -11,7 +11,7 @@ Primeira mensagem, curta: peça tudo o que o dev tiver sobre o cliente (texto, m
 - Ainda não tenho nada — prefere enviar o questionário para o cliente? (modelo em `modelos/questionario-cliente.md`)
 - O negócio ainda não é cliente (trilha E, leia `referencias/pitch-local.md`)
 
-Se optar pelo questionário, gere a versão final pronta para WhatsApp: troque o trecho entre colchetes da pergunta 5 por 1–2 exemplos de `referencias/sites.md` (nome, link, o que impressiona e ousadia); remova a pergunta de conselho se não for nicho regulado. Registre respostas e faltas no BRIEF/ESTADO.
+Se optar pelo questionário, use `modelos/questionario-cliente.md` como mensagem pronta para WhatsApp; remova a pergunta de conselho se não for nicho regulado. A pergunta 6 coleta a sensação desejada, referências e estilos a evitar. Não inclua a escolha discreto/marcante/uau no questionário: a ambição visual é decidida pelo dev nesta fase, com base nessa resposta e em `referencias/sites.md` (na raiz do repositório). Registre respostas e faltas no BRIEF/ESTADO.
 
 Em modo teste/pitch, identifique o documento como `DEMONSTRAÇÃO — DADO FICTÍCIO` e mantenha esse rótulo em toda saída do projeto.\n\nSalve o bruto em `projeto/referencias/material-bruto.md` (imagens na mesma pasta) e extraia tudo o que der para o BRIEF.
 
@@ -24,11 +24,11 @@ Classifique pelo BRIEF, sem perguntar:
 ## 3. Proposta + perguntas, numa mensagem só
 
 1. **Proposta** (curta, em lista): negócio · público · ação · diferenciais · trilha · escopo · identidade · nicho e limites de copy · proposta de ambição visual.
-2. **Pergunta de ambição visual:** proponha uma opção e peça confirmação/correção: discreto · marcante · uau. Use 1–2 exemplos pertinentes de `referencias/sites.md` (nome, link e o que a própria lista destaca; escolha por nicho/ousadia). A análise da técnica via Playwright é feita na fase 2. Não use exemplos externos. Para nicho regulado, diga que as regras mudam a copy, não a ousadia visual.
+2. **Decisão de ambição visual pelo dev:** com base na resposta à pergunta 6 do questionário (sensação, referências e estilos a evitar) e em `referencias/sites.md`, proponha ao dev uma opção: discreto · marcante · uau. Se o briefing veio por outro meio, extraia essas preferências do material recebido. Use 1–2 exemplos pertinentes da lista (nome, link e o que a própria lista destaca; escolha por nicho/ousadia). O dev decide e confirma ou corrige a proposta; não transfira essa escolha ao cliente. A análise da técnica via Playwright é feita na fase 2. Não use exemplos externos. Para nicho regulado, diga que as regras mudam a copy, não a ousadia visual.
 3. **Faltam:** reúna todas as perguntas numeradas numa só mensagem, com recomendação primeiro. Pergunte só o que não der para deduzir. Diferencial genérico ("qualidade", "atendimento") pede exemplo concreto. Em nicho regulado, inclua quem confirma as regras e registre o que faltar como pendência.
 4. **Dados de contato e acessos** (seção 3 do BRIEF): pergunte se já tem ou se deve montar a mensagem ao cliente. Se necessário, gere a mensagem pronta e registre cada item como pendência.
 5. **Negócio com endereço físico:** inclua a pergunta sobre o Google Business Profile (sem perfil, vira pendência prioritária).
 
 ## 4. Fechar
 
-Com as respostas: complete o BRIEF, registre trilha e nicho em "Decisões aprovadas" e as confirmações faltantes em "Pendências". Não repita o BRIEF para o dev. Versione conforme o modo e siga direto para a fase 2.
+Com as respostas e a decisão do dev: complete o BRIEF, registre trilha, nicho e ambição visual aprovada pelo dev em "Decisões aprovadas" e as confirmações faltantes em "Pendências". Não repita o BRIEF para o dev. Versione conforme o modo e siga direto para a fase 2.
