@@ -1,0 +1,136 @@
+[
+  {
+    "name": "mind",
+    "url": "https://www.mindrobotics.com",
+    "results": [
+      {
+        "width": 1440,
+        "status": 200,
+        "title": "Home | Mind Robotics",
+        "h1": [
+          "Mind Robotics\n is building \nuniversally\n \ncapable\n robots to transform industrial work."
+        ],
+        "height": 13178,
+        "headings": [
+          "Our first robots are\nlearning on the job",
+          "Intelligence on\nthe factory floor",
+          "The work we\nalways imagined\nmachines could do",
+          "Hands on\n with hardware \nevery day"
+        ],
+        "fonts": [
+          "sans-serif",
+          "CentraNo2, sans-serif"
+        ]
+      },
+      {
+        "width": 375,
+        "status": 200,
+        "title": "Home | Mind Robotics",
+        "h1": [
+          "Mind Robotics\n is building \nuniversally\n \ncapable\n robots to transform industrial work."
+        ],
+        "height": 9297,
+        "headings": [
+          "Our first robots are\nlearning on the job",
+          "Intelligence on\nthe factory floor",
+          "The work we\nalways imagined\nmachines could do",
+          "Hands on\n with hardware \nevery day"
+        ],
+        "fonts": [
+          "sans-serif",
+          "CentraNo2, sans-serif"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "money",
+    "url": "https://moneyincheck.org",
+    "results": [
+      {
+        "width": 1440,
+        "status": 200,
+        "title": "Money in Check — A novel by Óscar Pérez",
+        "h1": [
+          ""
+        ],
+        "height": 7191,
+        "headings": [
+          "Not a finance textbook.\nNot just a novel.\nA story that teaches you how\nmoney really works.",
+          "The Author",
+          "Chess, life, and finance share one truth:",
+          "Get Your Copy Of Money In Check"
+        ],
+        "fonts": [
+          "\"PP Editorial Old\", \"Times New Roman\", serif"
+        ]
+      },
+      {
+        "width": 375,
+        "status": 200,
+        "title": "Money in Check — A novel by Óscar Pérez",
+        "h1": [
+          ""
+        ],
+        "height": 6540,
+        "headings": [
+          "Not a finance textbook.\nNot just a novel.\nA story that teaches you how\nmoney really works.",
+          "The Author",
+          "Chess, life, and finance share one truth:",
+          "Get Your Copy Of Money In Check"
+        ],
+        "fonts": [
+          "\"PP Editorial Old\", \"Times New Roman\", serif"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "vittude",
+    "url": "https://vittude.com/",
+    "results": [
+      {
+        "width": 1440,
+        "status": 200,
+        "title": "Terapia Online Onde Você Estiver | Vittude",
+        "h1": [
+          "TERAPIA ONLINE: Seu psicólogo a qualquer hora, em qualquer lugar."
+        ],
+        "height": 7057,
+        "headings": [
+          "Impactamos mais de 200 mil vidas através de nossos clientes.",
+          "Ecossistema para gestão estratégica de saúde mental",
+          "Melhor rede de especialistas de saúde mental do Brasil",
+          "Como funciona a\nterapia online",
+          "Como começar minha terapia online",
+          "E quem já faz terapia?",
+          "Saúde mental é inegociável!"
+        ],
+        "fonts": [
+          "Sora, sans-serif"
+        ]
+      },
+      {
+        "width": 375,
+        "status": 200,
+        "title": "Terapia Online Onde Você Estiver | Vittude",
+        "h1": [
+          "TERAPIA ONLINE: Seu psicólogo a qualquer hora, em qualquer lugar."
+        ],
+        "height": 9142,
+        "headings": [
+          "Impactamos mais de 200 mil vidas através de nossos clientes.",
+          "Ecossistema para gestão estratégica de saúde mental",
+          "Melhor rede de especialistas de saúde mental do Brasil",
+          "Como funciona a\nterapia online",
+          "Como começar minha terapia online",
+          "E quem já faz terapia?",
+          "Saúde mental é inegociável!"
+        ],
+        "fonts": [
+          "Sora, sans-serif"
+        ]
+      }
+    ]
+  }
+]

@@ -95,7 +95,7 @@ Para adicionar um site, copie o bloco de uma entrada e preencha. Qualquer um dos
 
 - Link: [https://moneyincheck.org](https://moneyincheck.org)  
 - O que impressiona: um dos melhores heros.  
-- Técnica: a analisar (hero)  
+- Técnica: observada em 27/09/2026, Playwright 1440 e 375: título serifado monumental em duas linhas no desktop, objeto central sobreposto ao texto e composição com planos de profundidade; no celular, título e objeto se reorganizam verticalmente. Rolagem conduz à apresentação editorial do livro. Há uma tela de carregamento antes do hero. Capturas em `projeto/referencias/analise-visual/`.  
 - Ousadia: uau  
 - Nicho: a analisar
 
@@ -103,7 +103,7 @@ Para adicionar um site, copie o bloco de uma entrada e preencha. Qualquer um dos
 
 - Link: [https://www.mindrobotics.com](https://www.mindrobotics.com)  
 - O que impressiona: a seção "Intelligence on the factory floor".  
-- Técnica: a analisar (seção específica, não o site inteiro)  
+- Técnica: observada em 27/09/2026, Playwright 1440 e 375: em "Intelligence on the factory floor", título dividido em faixas arredondadas no alto e painel explicativo branco com indicadores na base; desktop mantém grande separação espacial, celular empilha os elementos. Navegação reduzida e tipografia sem serifa de grande escala. O conteúdo visual central não apareceu na captura headless; não atribuir técnica a essa região sem nova inspeção. Capturas em `projeto/referencias/analise-visual/`.  
 - Ousadia: marcante  
 - Nicho: tecnologia, indústria
 

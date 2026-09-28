@@ -1,0 +1,227 @@
+[
+  {
+    "key": "a",
+    "width": 320,
+    "overflow": false,
+    "h1Lines": 2,
+    "ctaVisible": true,
+    "imagesLoaded": true,
+    "font": "Lora, serif"
+  },
+  {
+    "key": "a",
+    "width": 375,
+    "overflow": false,
+    "h1Lines": 2,
+    "ctaVisible": true,
+    "imagesLoaded": true,
+    "font": "Lora, serif"
+  },
+  {
+    "key": "a",
+    "width": 768,
+    "overflow": false,
+    "h1Lines": 2,
+    "ctaVisible": true,
+    "imagesLoaded": true,
+    "font": "Lora, serif"
+  },
+  {
+    "key": "a",
+    "width": 1024,
+    "overflow": false,
+    "h1Lines": 2,
+    "ctaVisible": true,
+    "imagesLoaded": true,
+    "font": "Lora, serif"
+  },
+  {
+    "key": "a",
+    "width": 1280,
+    "overflow": false,
+    "h1Lines": 2,
+    "ctaVisible": true,
+    "imagesLoaded": true,
+    "font": "Lora, serif"
+  },
+  {
+    "key": "a",
+    "width": 1440,
+    "overflow": false,
+    "h1Lines": 2,
+    "ctaVisible": true,
+    "imagesLoaded": true,
+    "font": "Lora, serif"
+  },
+  {
+    "key": "a",
+    "width": 1536,
+    "overflow": false,
+    "h1Lines": 2,
+    "ctaVisible": true,
+    "imagesLoaded": true,
+    "font": "Lora, serif"
+  },
+  {
+    "key": "a",
+    "dialog": "ok",
+    "mobileMenu": "ok",
+    "reducedMotionRunningAnimations": 0,
+    "errors": []
+  },
+  {
+    "key": "a",
+    "noJsH1": true,
+    "noJsImage": true
+  },
+  {
+    "key": "b",
+    "width": 320,
+    "overflow": false,
+    "h1Lines": 3,
+    "ctaVisible": true,
+    "imagesLoaded": true,
+    "font": "\"DM Sans\", sans-serif"
+  },
+  {
+    "key": "b",
+    "width": 375,
+    "overflow": false,
+    "h1Lines": 2,
+    "ctaVisible": true,
+    "imagesLoaded": true,
+    "font": "\"DM Sans\", sans-serif"
+  },
+  {
+    "key": "b",
+    "width": 768,
+    "overflow": false,
+    "h1Lines": 2,
+    "ctaVisible": true,
+    "imagesLoaded": true,
+    "font": "\"DM Sans\", sans-serif"
+  },
+  {
+    "key": "b",
+    "width": 1024,
+    "overflow": false,
+    "h1Lines": 2,
+    "ctaVisible": true,
+    "imagesLoaded": true,
+    "font": "\"DM Sans\", sans-serif"
+  },
+  {
+    "key": "b",
+    "width": 1280,
+    "overflow": false,
+    "h1Lines": 2,
+    "ctaVisible": true,
+    "imagesLoaded": true,
+    "font": "\"DM Sans\", sans-serif"
+  },
+  {
+    "key": "b",
+    "width": 1440,
+    "overflow": false,
+    "h1Lines": 2,
+    "ctaVisible": true,
+    "imagesLoaded": true,
+    "font": "\"DM Sans\", sans-serif"
+  },
+  {
+    "key": "b",
+    "width": 1536,
+    "overflow": false,
+    "h1Lines": 2,
+    "ctaVisible": true,
+    "imagesLoaded": true,
+    "font": "\"DM Sans\", sans-serif"
+  },
+  {
+    "key": "b",
+    "dialog": "ok",
+    "mobileMenu": "ok",
+    "reducedMotionRunningAnimations": 0,
+    "errors": []
+  },
+  {
+    "key": "b",
+    "noJsH1": true,
+    "noJsImage": true
+  },
+  {
+    "key": "c",
+    "width": 320,
+    "overflow": false,
+    "h1Lines": 4,
+    "ctaVisible": true,
+    "imagesLoaded": true,
+    "font": "\"Bodoni Moda\", serif"
+  },
+  {
+    "key": "c",
+    "width": 375,
+    "overflow": false,
+    "h1Lines": 4,
+    "ctaVisible": true,
+    "imagesLoaded": true,
+    "font": "\"Bodoni Moda\", serif"
+  },
+  {
+    "key": "c",
+    "width": 768,
+    "overflow": false,
+    "h1Lines": 2,
+    "ctaVisible": true,
+    "imagesLoaded": true,
+    "font": "\"Bodoni Moda\", serif"
+  },
+  {
+    "key": "c",
+    "width": 1024,
+    "overflow": false,
+    "h1Lines": 2,
+    "ctaVisible": true,
+    "imagesLoaded": true,
+    "font": "\"Bodoni Moda\", serif"
+  },
+  {
+    "key": "c",
+    "width": 1280,
+    "overflow": false,
+    "h1Lines": 2,
+    "ctaVisible": true,
+    "imagesLoaded": true,
+    "font": "\"Bodoni Moda\", serif"
+  },
+  {
+    "key": "c",
+    "width": 1440,
+    "overflow": false,
+    "h1Lines": 2,
+    "ctaVisible": true,
+    "imagesLoaded": true,
+    "font": "\"Bodoni Moda\", serif"
+  },
+  {
+    "key": "c",
+    "width": 1536,
+    "overflow": false,
+    "h1Lines": 2,
+    "ctaVisible": true,
+    "imagesLoaded": true,
+    "font": "\"Bodoni Moda\", serif"
+  },
+  {
+    "key": "c",
+    "dialog": "ok",
+    "mobileMenu": "ok",
+    "reducedMotionRunningAnimations": 0,
+    "errors": []
+  },
+  {
+    "key": "c",
+    "noJsH1": true,
+    "noJsImage": true
+  }
+]
