@@ -9,7 +9,7 @@ export default function NaoEncontrada() {
       <p className="mb-8 max-w-md text-mist">
         O endereço pode ter mudado ou ter sido digitado com algum erro.
       </p>
-      <Link href="/" className="rounded-full bg-gold px-6 py-3 text-sm font-semibold text-navy-deep">
+      <Link href="/" className="botao-ouro rounded-full bg-gold px-6 py-3 text-sm font-semibold text-navy-deep">
         Voltar ao início
       </Link>
     </main>

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useRef } from "react";
+import { RevelarAoEntrar } from "@/components/animacoes/RevelarAoEntrar";
 import { useInViewOnce } from "@/lib/use-in-view-once";
 import { usePrefereMenosMovimento } from "@/lib/usar-menos-movimento";
 
@@ -36,18 +37,15 @@ export function ChamadaFinal() {
       )}
       <div className="absolute inset-0 bg-gradient-to-t from-navy-deep via-navy-deep/60 to-navy-deep/20" />
 
-      <div className="relative mx-auto max-w-2xl text-center">
+      <RevelarAoEntrar className="relative mx-auto max-w-2xl text-center">
         <h2 className="font-display mb-4 text-3xl font-bold tracking-tight sm:text-4xl">
           Quando quiser, a gente começa pela conversa.
         </h2>
         <p className="mb-8 text-mist">Escolha o tema, a forma de atendimento e um horário.</p>
-        <Link
-          href="/agendar"
-          className="inline-block rounded-full bg-gold px-8 py-4 text-sm font-semibold text-navy-deep transition-transform hover:scale-[1.03]"
-        >
+        <Link href="/agendar" className="botao-ouro inline-block rounded-full bg-gold px-8 py-4 text-sm font-semibold text-navy-deep">
           Agendar consulta
         </Link>
-      </div>
+      </RevelarAoEntrar>
     </section>
   );
 }

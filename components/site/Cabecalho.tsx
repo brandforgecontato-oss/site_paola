@@ -41,7 +41,7 @@ export function Cabecalho() {
         <div className="flex items-center gap-3">
           <Link
             href="/agendar"
-            className="whitespace-nowrap rounded-full bg-gold px-6 py-3 text-sm font-semibold text-navy-deep transition-transform hover:scale-[1.03]"
+            className="botao-ouro whitespace-nowrap rounded-full bg-gold px-6 py-3 text-sm font-semibold text-navy-deep"
           >
             Agendar consulta
           </Link>

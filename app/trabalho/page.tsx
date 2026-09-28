@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { RevelarAoEntrar } from "@/components/animacoes/RevelarAoEntrar";
 import { PalavraJanela } from "@/components/secoes/PalavraJanela";
 import { PerguntasFrequentes } from "@/components/secoes/PerguntasFrequentes";
 
@@ -42,8 +43,9 @@ export default function Trabalho() {
     <main id="conteudo">
       <PalavraJanela palavra="trabalho" />
 
-      <section className="bg-navy-deep px-5 py-20 sm:px-8">
-        <div className="mx-auto max-w-3xl">
+      <section className="relative overflow-hidden bg-navy-deep px-5 py-20 sm:px-8">
+        <div className="brilho-canto brilho-canto--superior-direito" aria-hidden="true" />
+        <RevelarAoEntrar className="relative mx-auto max-w-3xl">
           <h1 className="font-display mb-6 text-3xl font-bold tracking-tight sm:text-4xl">
             Direito do Trabalho em Brasília
           </h1>
@@ -67,21 +69,24 @@ export default function Trabalho() {
             Leve o que tiver: termo de rescisão, contracheques, mensagens, datas. Na consulta você
             sai sabendo o que falta e se vale seguir.
           </p>
-        </div>
+        </RevelarAoEntrar>
       </section>
 
       <PerguntasFrequentes titulo="Perguntas" itens={FAQ} />
 
-      <section className="bg-navy px-5 py-20 text-center sm:px-8">
-        <h2 className="font-display mb-8 text-2xl font-bold tracking-tight sm:text-3xl">
-          Traga suas dúvidas e seus documentos.
-        </h2>
-        <Link
-          href="/agendar"
-          className="inline-block rounded-full bg-gold px-8 py-4 text-sm font-semibold text-navy-deep transition-transform hover:scale-[1.03]"
-        >
-          Agendar consulta
-        </Link>
+      <section className="relative overflow-hidden bg-navy px-5 py-20 text-center sm:px-8">
+        <div className="brilho-canto brilho-canto--inferior-esquerdo" aria-hidden="true" />
+        <RevelarAoEntrar className="relative">
+          <h2 className="font-display mb-8 text-2xl font-bold tracking-tight sm:text-3xl">
+            Traga suas dúvidas e seus documentos.
+          </h2>
+          <Link
+            href="/agendar"
+            className="botao-ouro inline-block rounded-full bg-gold px-8 py-4 text-sm font-semibold text-navy-deep"
+          >
+            Agendar consulta
+          </Link>
+        </RevelarAoEntrar>
       </section>
     </main>
   );

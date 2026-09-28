@@ -2,6 +2,7 @@
 
 import { useId, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
+import { RevelarAoEntrar } from "@/components/animacoes/RevelarAoEntrar";
 
 export type Pergunta = { pergunta: string; resposta: string };
 
@@ -13,7 +14,9 @@ export function PerguntasFrequentes({ titulo = "Perguntas frequentes", itens }: 
   return (
     <section className="bg-navy-deep px-5 py-24 sm:px-8">
       <div className="mx-auto max-w-3xl">
-        <h2 className="font-display mb-10 text-3xl font-bold tracking-tight sm:text-4xl">{titulo}</h2>
+        <RevelarAoEntrar>
+          <h2 className="font-display mb-10 text-3xl font-bold tracking-tight sm:text-4xl">{titulo}</h2>
+        </RevelarAoEntrar>
 
         <ul className="flex flex-col divide-y divide-white/10 border-y border-white/10">
           {itens.map((item, i) => {
@@ -24,14 +27,14 @@ export function PerguntasFrequentes({ titulo = "Perguntas frequentes", itens }: 
                 <h3>
                   <button
                     type="button"
-                    className="flex w-full items-center justify-between gap-4 py-5 text-left"
+                    className="pergunta-linha flex w-full items-center justify-between gap-4 rounded-lg py-5 pr-2 text-left"
                     aria-expanded={expandida}
                     aria-controls={painelId}
                     onClick={() => setAberta(expandida ? null : i)}
                   >
                     <span className="font-medium">{item.pergunta}</span>
-                    <span aria-hidden="true" className="shrink-0 text-gold">
-                      {expandida ? "−" : "+"}
+                    <span aria-hidden="true" data-aberta={expandida} className="pergunta-sinal shrink-0 text-gold">
+                      +
                     </span>
                   </button>
                 </h3>
