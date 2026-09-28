@@ -390,7 +390,10 @@ body::before {
     clip-path: inset(0 100% 0 0);
     animation: hero-escrever linear both;
     animation-timeline: scroll(root);
-    animation-range: 185vh 255vh;
+    /* Antes começava só depois do parágrafo (185–255vh): era fácil parar de
+       rolar assim que "Prazer, Paola." aparecia e ver a assinatura pela
+       metade. Agora sobrepõe o fim do parágrafo e termina logo em seguida. */
+    animation-range: 150vh 205vh;
   }
   .hero-clarao {
     animation: hero-clarao linear both;
