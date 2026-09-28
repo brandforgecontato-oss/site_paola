@@ -410,7 +410,10 @@ body::before {
 }
 
 @media (max-width: 767px) {
-  .hero-palavra { font-size: 46vw; letter-spacing: -0.03em; }
+  /* 25vw cabe com folga: a palavra "clareza" nesta fonte (peso 800) mede ~3,43×
+     o font-size com este letter-spacing, então 25vw ≈ 86vw de largura total. Os
+     46vw usados antes davam ~158vw — cortada pelo overflow:hidden do hero. */
+  .hero-palavra { font-size: 25vw; letter-spacing: -0.03em; }
   .hero-recorte { padding-bottom: 30vh; }
   .hero-base { padding: 0 20px 28px; grid-template-columns: 1fr; gap: 20px; }
   .hero-paola video { object-position: 44% 30%; }
