@@ -44,6 +44,7 @@ export function ComoFunciona() {
             start: "top top",
             end: () => `+=${window.innerHeight * (passos.length - 1)}`,
             pin: true,
+            anticipatePin: 1,
             scrub: 1,
             invalidateOnRefresh: true,
           },

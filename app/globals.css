@@ -357,7 +357,12 @@ body::before {
    acima já é uma página empilhada normal, sempre visível. */
 @supports (animation-timeline: scroll()) {
   .hero-palco { height: 400vh; }
-  .hero-sticky { position: sticky; top: 0; height: 100dvh; min-height: 0; padding-top: 0; }
+  /* svh (não dvh): no celular, dvh muda de valor ao vivo conforme a barra de
+     endereço esconde/aparece durante a rolagem — como este elemento é sticky
+     dentro de um palco de 400vh, isso fazia a altura "respirar" no meio do
+     gesto e o navegador corrigir a posição de rolagem, dando a sensação de
+     travar/voltar ao inverter o sentido. svh fica fixo (menor viewport possível). */
+  .hero-sticky { position: sticky; top: 0; height: 100svh; min-height: 0; padding-top: 0; }
   .hero-palavra {
     animation: hero-atravessar linear both;
     animation-timeline: scroll(root);
