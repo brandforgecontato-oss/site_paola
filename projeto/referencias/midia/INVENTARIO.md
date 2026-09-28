@@ -16,8 +16,41 @@ Recebidas em 2026-09-27. Nove originais copiados de Downloads, sem edição; has
 | 08-icone-consultoria.jpg | 20260927214825.jpg | 768 × 1376 | Balão com martelo; estilo preenchido, distinto dos demais. Não misturar automaticamente os três estilos. |
 | 09-textura-geometrica.jpg | 20260927214823.jpg | 768 × 1376 | Fundo geométrico claro; usar com parcimônia e verificar continuidade se repetido. |
 
+## Vídeos recebidos em 2026-09-28
+
+Gerados pelo dev via Google Flow a partir dos prompts da fase 2. Copiados de Downloads sem edição. Duração e dimensões lidas via ffprobe.
+
+| Arquivo em `originais/` | Dimensões | Duração | Uso e observações |
+|---|---|---|---|
+| 10-mulher-escritorio.mp4 | 1920 × 1080 | 10 s | Mulher em escritório — cena humana gerada, ilustrativa. Não identificar como a Paola real. Verificar se há texto/marca visível antes de usar. |
+| 11-escritorio.mp4 | 1280 × 720 | 10 s | Ambiente de escritório — cena gerada, ilustrativa. Madeira, iluminação quente. |
+| 12-mesa-escritorio.mp4 | 1280 × 720 | 10 s | Mesa de escritório em close — objeto/ambiente gerado. Verificar se há textos legíveis antes de usar. |
+| 13-martelo-judicial.mp4 | 1280 × 720 | ~10 s | Martelo judicial — símbolo jurídico gerado. Cuidado: clichê visual; usar só se a direção pedir. |
+
+## Vídeos dos prompts — 2026-09-28
+
+Gerados pelo dev no Google Flow a partir dos prompts sugeridos na fase 2. Todos 1280x720, 10s.
+
+| Arquivo em `originais/` | Prompt de origem | Uso previsto |
+|---|---|---|
+| 14-particulas-douradas.mp4 | Gold dust particles floating in dark blue space | Hero imersivo (direção uau) — overlay de profundidade, fundo escuro |
+| 15-luz-persiana.mp4 | Golden light filtering through window blinds | Hero principal (direção marcante) — background full-bleed com overlay de texto |
+| 16-drone-cidade.mp4 | Aerial drone over city skyline at golden hour | Hero ou seção de apresentação — âncora geográfica Brasília |
+
+## Vídeos dos prompts do MIDIA — 2026-09-28
+
+Gerados pelo dev no Google Flow com os prompts 1 a 4 de `projeto/MIDIA.md`. Conferidos: sem texto, pessoas ou marcas.
+
+| Arquivo em `originais/` | Prompt | Dimensões | Duração | Uso |
+|---|---|---|---|---|
+| 17-particulas-1080p.mp4 | 1 · hero desktop 1080p | 1920 × 1080 | 10 s | Substitui o 14 no hero e na palavra-janela de Família e Trabalho |
+| 18-particulas-vertical.mp4 | 2 · hero celular | 1080 × 1920 | 10 s | Hero no celular (coluna de partículas com luz de cima) |
+| 19-persiana-vertical.mp4 | 3 · persiana celular | 1080 × 1920 | 10 s | "Como funciona" no celular (sombras diagonais) |
+| 20-particulas-assentando.mp4 | 4 · chamada final | 1920 × 1080 | 10 s | Chamada final. Não fecha loop: toca uma vez ao entrar na tela e para no último quadro (linha de luz) |
+
 ## Seleção inicial
 
-Priorizar 01, 03, 04 e 09 conforme a composição. Demais imagens ficam preservadas para escolha na fase 2. Nenhum arquivo foi retocado, recortado ou convertido nesta entrega; o recebimento não obriga a usar todas as imagens.
+**Imagens:** priorizar 01, 03, 04 e 09 conforme a composição. Demais ficam em reserva.
+**Vídeos:** 10 e 11 são candidatos principais para o hero; 13 é reserva (clichê potencial); 12 depende da leitura da cena. Aguardando vídeos adicionais dos prompts (persiana, partículas, textura, Brasília).
 
-O aviso de demonstração e a descrição das imagens devem deixar clara sua natureza ilustrativa. Fotos geradas não são prova de qualificação, resultado, equipe, clientela ou estrutura da pessoa real.
+Nenhum arquivo foi retocado, recortado ou convertido. O aviso de demonstração deve deixar clara a natureza ilustrativa. Conteúdo gerado não é prova de qualificação, resultado, equipe, clientela ou estrutura da pessoa real.
