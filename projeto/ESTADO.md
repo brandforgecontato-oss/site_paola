@@ -4,11 +4,11 @@
 
 ## Agora
 
-- **Fase atual:** 4 — Construção, revisão e relatório (concluída)
-- **Próximo passo:** refinamento livre (fase 5) — diga o que ajustar, ou "pode entregar" para ir ao preview (fase 6).
+- **Fase atual:** 5 — Refinamento livre (em andamento)
+- **Próximo passo:** diga o que mais ajustar, ou "pode entregar" para ir ao preview (fase 6).
 - **Modelo recomendado:** Sonnet
-- **Versionamento:** modo 1 — GitHub Desktop; Claude/Codex não fazem commit nem push. Hora de commitar: site construído (todas as páginas, seções e animações da direção B), resumo "Construção da direção B: hero, páginas de área, agendamento demonstrativo, SEO e segurança revisados", descrição no corpo de `projeto/RELATORIO.md`.
-- **Última atualização:** 2026-09-28 por Claude Code (execução autônoma da fase 4 concluída)
+- **Versionamento:** modo 1 — GitHub Desktop; Claude/Codex não fazem commit nem push. Hora de commitar: site construído (todas as páginas, seções e animações da direção B), resumo "Construção da direção B: hero, páginas de área, agendamento demonstrativo, SEO e segurança revisados", descrição no corpo de `projeto/RELATORIO.md`. Inclui também o refinamento abaixo (vídeo completo da Paola no hero e reforço visual das seções) — ainda sem commit.
+- **Última atualização:** 2026-09-28 por Claude Code (refinamento: vídeo completo da Paola no hero, reforço visual das seções fora do hero/"Como funciona" — fundos com brilho e textura, cartões com glow, botões com brilho, revelação ao rolar, FAQ)
 - **Modo:** teste/portfólio — cenário fictício autorizado; identificação de demonstração; sem atendimento real ou publicação autorizada.
 
 ## Fases
@@ -20,7 +20,7 @@
 | | 2 | Pacote criativo | Concluída | `projeto/DIRECAO.md` (v2, B recomendada), `projeto/COPY.md`, `projeto/MIDIA.md`, pranchas em `projeto/pranchas/` |
 | | 3 | Portão | Concluída | "Pode construir" em 2026-09-28, direção B |
 | Execução autônoma | 4 | Construção, revisão e relatório | Concluída | `projeto/REVISAO.md`, `projeto/RELATORIO.md`, `projeto/DECISOES.md` |
-| Refinamento | 5 | Refinamento livre | Não iniciada | — |
+| Refinamento | 5 | Refinamento livre | Em andamento | Vídeo completo da Paola no hero; reforço visual (fundos, cartões, botões, revelação ao rolar) nas seções fora do hero/"Como funciona" |
 | Entrega | 6 | Preview, feedback, lançamento e portfólio | Não iniciada | — |
 
 ## Decisões aprovadas
@@ -41,6 +41,7 @@
 - 2026-09-28 — Dev escolheu a direção B "Clareza em ouro" e pediu para melhorá-la antes do "pode construir". Acréscimos aprovados: abertura com o logo PM, clarão dourado na revelação e assinatura escrita com o scroll. Depois, também: "Como funciona" com a persiana, chamada final com partículas assentando, palavra-janela no topo de Família e Trabalho, brilho na confirmação do agendamento.
 - 2026-09-28 — **Portão aprovado: "pode construir"** (dev, BrandForge). Direção final: B "Clareza em ouro", com os acréscimos acima. Copy com CTA único "Agendar consulta"; mídia com vídeos 10, 15, 17 a 20 e logo PM; stack registrada abaixo.
 - 2026-09-28 — Dev informou que o vídeo 10 retrata a Paola e autorizou o uso como revelação surpresa após o hero ("Prazer, Paola."). Continua sem atribuir credenciais reais; o aviso de demonstração permanece. Na construção, cortar o trecho com logo da Apple e capa de livro legível.
+- 2026-09-28 (fase 5) — Dev pediu o vídeo 10 completo (10 s) na revelação da Paola, não só o recorte de 1,6 s. Avisado que os 10 s mostram o notebook com logo da Apple (~4,3–6,5 s) e a capa "Direito Civil" legível (~7–9,5 s); dev optou por manter assim mesmo (~substitui a decisão #2 de `projeto/DECISOES.md`~, ver `projeto/MIDIA.md` item 8).
 
 ## Stack
 

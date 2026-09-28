@@ -66,7 +66,7 @@ export function Hero() {
             </div>
             <Link
               href="/agendar"
-              className="w-fit rounded-full bg-gold px-6 py-3 text-sm font-semibold whitespace-nowrap text-navy-deep transition-transform hover:scale-[1.03]"
+              className="botao-ouro w-fit rounded-full bg-gold px-6 py-3 text-sm font-semibold whitespace-nowrap text-navy-deep"
             >
               Agendar consulta
             </Link>

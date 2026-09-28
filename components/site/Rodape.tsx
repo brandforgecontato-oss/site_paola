@@ -10,10 +10,15 @@ const LINKS = [
 
 export function Rodape() {
   return (
-    <footer className="bg-navy-deep px-5 py-16 text-mist sm:px-8">
-      <div className="mx-auto flex max-w-5xl flex-col gap-8 border-t border-white/10 pt-10">
+    <footer className="bg-navy-deep px-5 pb-16 text-mist sm:px-8">
+      <div className="mx-auto max-w-5xl">
+        <div className="rodape-linha" aria-hidden="true" />
+      </div>
+      <div className="mx-auto flex max-w-5xl flex-col gap-8 pt-10">
         <div className="flex flex-col gap-2">
-          <p className="font-display text-lg font-semibold text-paper">Paola Marra Advocacia</p>
+          <p className="font-display text-lg font-semibold text-paper">
+            Paola <span className="text-gold">Marra</span> Advocacia
+          </p>
           <p className="text-sm">Brasília, DF</p>
           <p className="text-sm">contato@example.com (endereço de demonstração)</p>
           <p className="text-sm">Registro profissional: demonstração</p>
