@@ -1,54 +1,65 @@
-# Plano de mídia — B / Presença
+# Mídia — Paola Marra | Advocacia (direção B recomendada)
 
-> DEMONSTRAÇÃO — DADO FICTÍCIO. Pessoas e ambientes fornecidos são imagens geradas pelo dev, autorizadas para este conceito. Não representam clientes, retratos confirmados ou espaço real da Paola.
+> DEMONSTRAÇÃO — DADO FICTÍCIO. Toda mídia é gerada ou ilustrativa; não documenta pessoa, equipe, cliente ou escritório reais.
 
-## Bloco de estilo comum
+Status: pendente · recebida · processada. Originais em `projeto/referencias/midia/originais/` (inventário em `projeto/referencias/midia/INVENTARIO.md`). Destino final em `public/media/` na construção.
 
-Azul profundo próximo de #2c3e50, luz natural quente, madeira com acabamento discreto e dourado pontual. Ambiente de escuta e clareza, sem ostentação. Fotografias ilustrativas com contraste moderado; interfaces e textos do site permanecem fora das imagens. Sem nomes, números profissionais, certificados legíveis, marcas, depoimentos ou promessa de resultado. Nenhuma imagem gerada será apresentada como evidência de pessoas, estrutura ou atendimento reais.
+## Bloco de estilo (repetir em todo prompt)
 
-## Mídia fornecida e destinos planejados
+> Deep navy blue (#1e2d3d to #0d1b2a) and warm metallic gold (#d4af37) only. Cinematic, calm, premium, shallow depth of field, soft volumetric light. Absolutely no text, letters, numbers, logos, signs or watermarks. No people, no faces, no hands, no office, no courtroom, no gavel, no documents. Abstract atmosphere and texture only. Slow, smooth motion; the last frame matches the first for a seamless loop.
 
-Originais preservados em `projeto/referencias/midia/originais/`. Nesta fase, apenas enquadramento por CSS nas pranchas; nenhuma transformação de bitmap executada.
+Restrição do nicho: nada que sugira resultado, equipe, cliente ou espaço real. Só textura, luz e atmosfera.
 
-| Origem | Uso | Proporção/enquadramento | Destino na construção | Status |
-|---|---|---|---|---|
-| 01-escritorio-geral.png | Hero desktop | Fonte 3:2; gerar versão 16:9 e enquadrar pelo container da direção B | `public/images/hero-escritorio-desktop.webp` | Recebida; preparação pendente |
-| 01-escritorio-geral.png | Hero mobile | Versão vertical 9:16; mostrar no quadro horizontal curto com foco em mesa/cadeira conforme prancha | `public/images/hero-escritorio-mobile.webp` | Recebida; preparação pendente |
-| 03-logo-pm.jpg | Marca/cabeçalho/rodapé | Conter monograma, remover margens excessivas sem redesenhar a identidade | `public/images/logo-pm.webp` | Recebida; preparação pendente |
-| 04-profissional-ilustrativa.jpg | Seção “O conceito” | Vertical, foco no gesto de escuta; legenda de imagem gerada | `public/images/conceito-profissional.webp` | Recebida; preparação pendente |
-| 09-textura-geometrica.jpg | Fundo opcional da seção do conceito | Baixa intensidade, sem repetição com emendas visíveis | `public/images/textura-geometrica.webp` | Recebida; uso opcional |
-| 02-recepcao.jpg e 05-atendimento-ilustrativo.jpg | Reserva | Contêm marcas/nomes alheios; fora da seleção principal | Sem destino de publicação | Recebidas; não selecionadas |
-| 06/07/08 ícones | Reserva visual | Estilos diferentes; não compor conjunto inconsistente | Sem destino de publicação | Recebidos; não selecionados |
+## Itens da direção B
 
-- Usar `picture`/fontes responsivas ou `next/image` na construção, reservando dimensões. Recorte deverá preservar cadeira, mesa e iluminação; no celular, não depender de detalhes de documentos.
-- A versão vertical 9:16 é alternativa de mídia para telas estreitas; não obriga a exibir toda a altura no hero. Se o recorte perder conteúdo, usar a fonte original com enquadramento por CSS em vez de distorcer.
-- Não gerar foto de outra pessoa e nomeá-la como Paola. A prancha A é alternativa com cena humana explicitamente ilustrativa.
-- Textura pode ser omitida se competir com o texto; nenhum novo material é necessário para construir a recomendação.
-- Fotografias possuem detalhes sintéticos e textos em inglês. Enquadrar para que não se tornem informação funcional; não transcrever esses textos como instruções ou dados do projeto.
+| # | Uso | Arquivo de destino | Proporção | Duração / loop | Status |
+|---|---|---|---|---|---|
+| 1 | Hero desktop e palavra-janela de Família/Trabalho | `public/media/hero-particulas-16x9.mp4` + `.webm` + poster `.jpg` | 16:9 | 10 s, loop | **recebida** (17, 1080p) |
+| 2 | Hero celular | `public/media/hero-particulas-9x16.mp4` + `.webm` + poster | 9:16 | 10 s, loop | **recebida** (18, 1080×1920) |
+| 3 | Fundo do "Como funciona" | `public/media/metodo-persiana-16x9.mp4` + poster | 16:9 | 10 s, loop | **recebida** (15, 720p; suficiente com opacidade baixa) |
+| 4 | Fundo do "Como funciona" no celular | `public/media/metodo-persiana-9x16.mp4` + poster | 9:16 | 10 s, loop | **recebida** (19, 1080×1920) |
+| 5 | Chamada final, partículas assentando | `public/media/cta-assentar-16x9.mp4` + poster (último quadro) | 16:9 | 10 s, **toca uma vez** e para | **recebida** (20, 1080p) |
+| 6 | Logo PM na navegação e favicon | `public/brand/pm.svg` ou `.png` recortado | 1:1 | — | **recebida** (03, precisa recorte e fundo transparente) |
+| 7 | Logo PM claro na abertura (letras papel, balança ouro, fundo transparente) | `public/brand/pm-claro.png` (ideal: SVG vetorizado) | ~2,1:1 | — | **processada para a prancha** (`projeto/pranchas/media/pm-claro.png`, gerada do 03); refazer em alta na construção |
+| 8 | Revelação da Paola após o hero | `public/media/paola-16x9.mp4` + `.webm` + poster | 16:9 | trecho de ~7,6 s a 10 s (ela olha e sorri), em loop | **recebida** (10, 1080p). Cortar o trecho com logo da Apple e capa "Direito Civil" legível |
+| 9 | Revelação da Paola no celular | `public/media/paola-9x16.mp4` + poster | 9:16 | ~3 s, loop | **opcional**: recorte vertical do 10 (rosto centralizado) na construção; funciona com `object-position` enquanto isso |
+| 10 | Assinatura "Paola Marra" | fonte Herr Von Muellerhoff via `next/font` (ou SVG da assinatura real) | — | escrita com o scroll | **pronta** (fonte); **pendente** se o dev quiser a assinatura real |
 
-## Prompts opcionais para Google Flow
+Tratamento na construção: comprimir (H.264 + VP9/WebM, sem áudio, ~2-4 MB por vídeo), gerar poster do 1º quadro, `preload="metadata"`, poster no lugar do vídeo em `prefers-reduced-motion` e em conexão lenta. Enquanto um item estiver pendente, usa-se o poster do item recebido mais próximo, sem conteúdo inventado.
 
-São alternativas prontas, não pedidos de geração pendentes nem requisito para avançar. A direção recomendada usa as imagens recebidas. Repetem as restrições para permanecerem completos quando copiados isoladamente.
+## Prompts prontos (Google Flow)
 
-### Hero desktop alternativo
+**Prompt 1 · Hero desktop em 1080p (refazer o 14)**
+```
+Macro slow motion of tiny gold dust particles and small gold flakes floating and drifting through a deep dark navy blue space, lit by a single warm light from the left. Particles are sharp in the center and softly out of focus toward the edges, dense in the middle third of the frame. Camera almost still, a very slow push forward. Deep navy blue (#1e2d3d to #0d1b2a) and warm metallic gold (#d4af37) only. Cinematic, calm, premium, shallow depth of field, soft volumetric light. Absolutely no text, letters, numbers, logos, signs or watermarks. No people, no faces, no hands, no office, no courtroom, no gavel, no documents. Abstract atmosphere and texture only. Slow, smooth motion; the last frame matches the first for a seamless loop. 16:9, 1080p, 10 seconds.
+```
 
-- Uso: atmosfera simbólica, se o dev preferir substituir o escritório.
-- Proporção: 16:9. Tipo: imagem estática, sem duração/loop. Câmera fixa em plano médio; sem movimento.
-- Destino: `public/images/hero-atmosfera-desktop.webp`. Poster: não se aplica a imagem estática.
-- Status: pendente, opcional, não solicitada.
-- Prompt: “Imagem editorial horizontal 16:9 para um projeto conceitual de advocacia. Azul profundo próximo de #2c3e50, luz natural quente, madeira discreta e um único detalhe dourado. Natureza-morta com folhas sem escrita, pasta azul fechada e uma cadeira vazia vista parcialmente; composição serena, espaço negativo à esquerda. Câmera fixa em plano médio, perspectiva natural, sem movimento. Atmosfera simbólica de escuta e clareza, sem representar instalações reais. Sem pessoas, sem certificados, sem marcas, sem nomes, sem números profissionais. Sem texto, sem letras, sem legendas ou logotipos. Não sugerir atendimento, qualificação ou resultado real. Contraste moderado, luz suave, materiais plausíveis, sem ostentação.”
+**Prompt 2 · Hero celular**
+```
+Vertical macro slow motion of gold dust particles and small gold flakes floating upward through a deep dark navy blue space, dense in the center of the frame, lit by a single warm light from above. Camera still. Deep navy blue (#1e2d3d to #0d1b2a) and warm metallic gold (#d4af37) only. Cinematic, calm, premium, shallow depth of field, soft volumetric light. Absolutely no text, letters, numbers, logos, signs or watermarks. No people, no faces, no hands, no office, no courtroom, no gavel, no documents. Abstract atmosphere and texture only. Slow, smooth motion; the last frame matches the first for a seamless loop. 9:16 vertical, 1080p, 8 seconds.
+```
 
-### Hero mobile alternativo
+**Prompt 3 · Persiana no celular**
+```
+Vertical extreme close-up of warm golden light passing through horizontal window blind slats, shadows of the slats drifting slowly downward across a deep navy blue wall. Dust sparkles gently in the light beams. Camera still. Deep navy blue (#1e2d3d to #0d1b2a) and warm metallic gold (#d4af37) only. Cinematic, calm, premium, shallow depth of field, soft volumetric light. Absolutely no text, letters, numbers, logos, signs or watermarks. No people, no faces, no hands, no office, no courtroom, no gavel, no documents. Abstract atmosphere and texture only. Slow, smooth motion; the last frame matches the first for a seamless loop. 9:16 vertical, 1080p, 8 seconds.
+```
 
-- Uso: mesma atmosfera em variante vertical.
-- Proporção: 9:16. Tipo: imagem estática, sem duração/loop. Câmera fixa em plano médio vertical; sem movimento.
-- Destino: `public/images/hero-atmosfera-mobile.webp`. Poster: não se aplica.
-- Status: pendente, opcional, não solicitada.
-- Prompt: “Imagem editorial vertical 9:16 para um projeto conceitual de advocacia. Azul profundo próximo de #2c3e50, luz natural quente, madeira discreta e um único detalhe dourado. Natureza-morta com folhas sem escrita, pasta azul fechada e uma cadeira vazia vista parcialmente; objetos principais no centro inferior, espaço negativo na parte superior e nas laterais para diferentes recortes. Câmera fixa em plano médio vertical, perspectiva natural, sem movimento. Atmosfera simbólica de escuta e clareza, sem representar instalações reais. Sem pessoas, sem certificados, sem marcas, sem nomes, sem números profissionais. Sem texto, sem letras, sem legendas ou logotipos. Não sugerir atendimento, qualificação ou resultado real. Contraste moderado, luz suave, materiais plausíveis, sem ostentação.”
+**Prompt 4 · CTA final, partículas assentando**
+```
+Gold dust particles drifting slowly downward and settling into a calm, thin horizontal band of soft gold light across the lower third of a deep navy blue space. The movement feels like things falling into place. Camera still. Deep navy blue (#1e2d3d to #0d1b2a) and warm metallic gold (#d4af37) only. Cinematic, calm, premium, shallow depth of field, soft volumetric light. Absolutely no text, letters, numbers, logos, signs or watermarks. No people, no faces, no hands, no office, no courtroom, no gavel, no documents. Abstract atmosphere and texture only. Slow, smooth motion; the last frame matches the first for a seamless loop. 16:9, 1080p, 8 seconds.
+```
 
-## Movimento e carregamento
+## Ideias de mídia por direção
 
-- Direção B: imagem estática; aproximação CSS de 3,5% apenas ao hover com ponteiro preciso. Sem loop ou câmera automática.
-- `prefers-reduced-motion`: aproximação desativada. Hero, texto e imagem visíveis desde o HTML.
-- Se C for escolhida, atualizar este plano: entrada sutil de escala na imagem, sem vídeo obrigatório.
-- Open Graph: composição estática da identidade aprovada, 1200 × 630, com aviso de conceito. Destino `app/opengraph-image.tsx` na fase de construção; não gerar fotografia extra.
+- **A · A janela:** 15 (hero e método); prompt 3 para o celular; poster em quadro com lâminas bem marcadas.
+- **B · Clareza em ouro:** tabela acima.
+- **C · Porta aberta:** 11 (visita controlada pelo scroll; na construção, recodificar com keyframe a cada quadro para o scrub ficar liso); 10 opcional com legenda de demonstração; vertical pendente (percurso do escritório em 9:16).
+
+## Mídia fora da seleção
+
+- 13 martelo: descartado (texto na tela e marca "LAICIA FIRM").
+- 12 mesa: reserva (placa e livro com texto).
+- 16 drone: reserva; arranha-céus não parecem Brasília, não usar como a cidade.
+- 02 e 05: reserva (placas e nomes de outros escritórios).
+- 04: pessoa ilustrativa; não apresentar como a Paola.
+- 10: é a Paola, conforme o dev (2026-09-28); usado na revelação. Sem legenda que atribua credencial; o aviso de demonstração cobre o cenário.

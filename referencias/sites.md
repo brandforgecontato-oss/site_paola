@@ -79,7 +79,7 @@ Para adicionar um site, copie o bloco de uma entrada e preencha. Qualquer um dos
 
 - Link: [https://openai.com/index/gpt-6-astra/](https://openai.com/index/gpt-6-astra/)  
 - O que impressiona: o hero.  
-- Técnica: a analisar (hero)  
+- Técnica: a analisar (hero). Em 28/09/2026 o site devolveu 403 ao navegador automatizado; analisar manualmente.  
 - Ousadia: uau  
 - Nicho: tecnologia
 
@@ -111,7 +111,7 @@ Para adicionar um site, copie o bloco de uma entrada e preencha. Qualquer um dos
 
 - Link: [https://www.meermohsin.me](https://www.meermohsin.me)  
 - O que impressiona: página inteira animada pela rolagem.  
-- Técnica: animação guiada por scroll (detalhar ao analisar)  
+- Técnica: observada em 28/09/2026, Playwright 1440 e 375: tela de carga e hero com título gigante em faixa horizontal passando entre o fundo e a pessoa recortada (texto entre camadas); a página (~28.000 px) é uma sequência de capítulos fixados na tela, trocados pelo scroll com máscaras de forma e mudanças de campo de cor; no celular, mesma composição empilhada, com o título cortado nas bordas. Capturas em `projeto/referencias/analise-visual/` do site Paola Marra.  
 - Ousadia: uau  
 - Nicho: portfólio
 
@@ -119,6 +119,6 @@ Para adicionar um site, copie o bloco de uma entrada e preencha. Qualquer um dos
 
 - Link: [https://www.moto-card.com](https://www.moto-card.com)  
 - O que impressiona: scroll criativo e bonito.  
-- Técnica: scroll criativo (detalhar ao analisar)  
+- Técnica: observada em 28/09/2026, Playwright 1440 e 375: abertura com logo centralizado sobre preto; hero com um único objeto (cartão metálico) em pedestal sobre textura de pedra escura, título centralizado acima e ação em pílula abaixo; ao rolar, uma nova cena sobe (globo terrestre) com etiquetas de status flutuando. Capturas em `projeto/referencias/analise-visual/` do site Paola Marra.  
 - Ousadia: uau  
 - Nicho: a analisar

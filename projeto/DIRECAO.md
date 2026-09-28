@@ -1,118 +1,111 @@
-# Direções criativas — Paola Marra
+# Direções visuais — Paola Marra | Advocacia
 
-> DEMONSTRAÇÃO — DADO FICTÍCIO. Projeto conceitual para portfólio; não representa uma advogada ou escritório em operação.
+> DEMONSTRAÇÃO — DADO FICTÍCIO. Projeto de portfólio; não é escritório em operação.
 
-## Conceito central
+Versão 2 (2026-09-28). Refeita a pedido do dev: todas as direções entre **marcante e uau**, com vídeo, scroll e animação, e hero surpreendente. A versão 1 (imagens estáticas) foi substituída.
 
-Uma conversa compreensível sobre assuntos que atravessam a vida: família e trabalho. O espaço de escuta orienta as imagens, o ritmo e a hierarquia, sem métricas de êxito ou credenciais fictícias apresentadas como reais.
+## Design read
 
-Leitura do briefing: site institucional com estrutura de agendamento demonstrativo, público amplo, muitas pessoas chegando com insegurança. Ambição aprovada: **marcante**, mantendo alternativas discreta e uau para comparação. Paleta azul/dourado recebida do dev; mídias geradas fornecidas pelo dev.
+- Página de conversão (trilha A): apresenta o conceito e leva ao agendamento demonstrativo.
+- Público do cenário: mulheres de 25 a 65 anos em Brasília, muitas "desorientadas e assustadas com processos" (material bruto §3). Precisam de calma e clareza, não de espetáculo pelo espetáculo.
+- Clima pedido pela cliente: profissional, acolhedor, confiável, "clean mas quente"; **não** quer parecer grande escritório impessoal nem "millennial" (material bruto §6).
+- Ambição: marcante/uau (dev, 2026-09-28).
+- Identidade: azul escuro #2c3e50, dourado #d4af37, branco, cinza suave; logo PM com balança.
+- Regras de nicho: sem preço, parcelamento, depoimento, resultado ou credencial real (Provimento 205/2021 como referência editorial).
 
-## Portfólio e pesquisa
+**Tensão a resolver:** "uau" contra "acolhedor". Solução em todas as direções: o efeito conta a ideia central do brief (**clareza**), e o texto fica sempre calmo, curto e legível. Um momento forte por página, o resto quieto.
 
-- `portfolio/sites/` contém apenas `.gitkeep`; nenhum projeto anterior disponível para comparar fontes ou composição.
-- Modo GitHub Desktop respeitado: sem fetch, commit ou push. Não foi afirmada consulta a portfólio remoto atualizado.
-- Mind Robotics, Money in Check e Vittude visitados via Playwright em 1440 e 375, com rolagem até o fim. Capturas e observações em `projeto/referencias/analise-visual/`.
-- As fontes são pontos de partida de composição; não reutilizamos marcas, textos ou imagens desses sites.
+## Referências analisadas (Playwright, 1440 e 375)
 
-## A — Escuta
+| Referência | Técnica observada | Capturas |
+|---|---|---|
+| [Meer Mohsin](https://www.meermohsin.me) | Hero com título gigante passando **entre** o fundo e a pessoa recortada (camadas de profundidade); página de ~28.000 px dividida em capítulos fixados na tela, trocados pelo scroll com máscaras de forma. | `referencias/analise-visual/meermohsin-*` |
+| [Moto Card](https://www.moto-card.com) | Abertura com logo centralizado; hero com objeto único em pedestal sobre textura escura e título centralizado; no scroll, uma nova cena sobe (globo) com etiquetas flutuando. | `referencias/analise-visual/motocard-*` |
+| [Money in Check](https://moneyincheck.org) | Título monumental com objeto sobreposto, planos de profundidade (análise anterior). | `referencias/analise-visual/` |
+| [OpenAI GPT-6 Astra](https://openai.com/index/gpt-6-astra/) | Não analisado: o site bloqueia navegador automatizado (403). | — |
 
-- **Ambição:** discreta.
-- **Ideia:** uma presença humana em um espaço de leitura calmo.
-- **H1:** “Escuta atenta. Direito em Brasília.”
-- **Apoio:** “Uma conversa clara pode ser o primeiro passo para compreender uma situação difícil.”
-- **CTA:** “Simular consulta”.
-- **Referências:** [Vittude](https://vittude.com/), enviada pelo dev: composição texto/fotografia e ação clara, observadas no hero. Reinterpretação com imagem retangular de um único canto amplo e fundo claro, sem cores ou recorte orgânico da referência. [Mind Robotics](https://www.mindrobotics.com), da lista curada: navegação curta e hierarquia ampla; aqui em escala silenciosa, sem pills no título.
-- **Mídia:** `04-profissional-ilustrativa.jpg` em enquadramento vertical; legenda esclarece que não é retrato da Paola. Logo PM fornecido. Sem fotos de clientes ou depoimentos.
-- **Alavancas:** espaço como material, largura de leitura contida e neutros suaves. Inverte a monumentalidade tipográfica: proximidade acima de impacto.
-- **Paleta:** azul `#2c3e50` para texto/CTA; branco `#ffffff`; névoa `#edf1f4`; apoio `#4b5e6c`; ouro fosco `#a88c46` reservado a detalhes não textuais.
-- **Tipografia:** Lora 400 nos títulos, Source Sans 3 400/600 no corpo. Razão 1,25; H1 ~62 px no desktop, 34 px no celular. Serifa justificada pelo conceito de leitura cuidadosa; nenhum destaque isolado em itálico.
-- **Forma:** controles com raio 6 px; imagem com um canto de 128 px no desktop; sem sombras de cartões.
-- **Layout:** texto e imagem vertical em proporção aproximada 5:3. Áreas abaixo em duas colunas abertas; método depois em lista de etapas e FAQ em acordeões.
+Portfólio BrandForge (`portfolio/sites/`, local e remoto): vazio. Sem conflito de fonte, paleta ou hero.
 
-```text
-aviso de demonstração
-marca                         navegação
-H1 + apoio + CTA              imagem humana
-áreas em duas colunas
-método em etapas / FAQ / contato demo
-```
+## Autocrítica
 
-- **Assinatura:** uma dobra suave no enquadramento da foto; interação principal é a abertura clara do diálogo demonstrativo. Movimento reduzido mantém tudo estático.
-- **Pranchas:** `projeto/pranchas/a.html`; `projeto/referencias/direcoes/a-1440.png` e `a-375.png`.
-- **Risco:** pode parecer conservadora frente à ambição marcante; a imagem sintética exige contextualização permanente.
+Clichês de advocacia evitados: martelo (vídeo 13 descartado), balança como ilustração principal, serif de "tradição", banner escuro com texto dourado centralizado, "defendendo seus direitos".
+O que é deste brief: a palavra **clareza** (diferencial declarado pela cliente), a luz entrando (entender antes de decidir), o método em etapas, o dourado e o azul da identidade dela.
 
-## B — Presença (recomendada)
+---
 
-- **Ambição:** marcante.
-- **Ideia:** o azul sustenta a confiança; a luz e a madeira do escritório trazem acolhimento.
-- **H1:** “Família e trabalho. Direito com clareza.”
-- **Contexto do hero:** “Direito de Família e do Trabalho em Brasília”. Brasília identifica o cenário fictício, não um estabelecimento real.
-- **Apoio:** “Escuta, linguagem simples e atenção ao que importa em cada etapa da sua vida.”
-- **CTA:** “Simular consulta”.
-- **Referências:** [Mind Robotics](https://www.mindrobotics.com), seção “Intelligence on the factory floor”: separação entre título dominante e área visual/painel informativo, com navegação enxuta. Reinterpretamos essa hierarquia em texto à esquerda e ambiente à direita, sem pills ou cena industrial. [Vittude](https://vittude.com/): protagonismo de uma ação e presença acolhedora da imagem, aqui com ambiente em lugar de retrato.
-- **Mídia:** `01-escritorio-geral.png` no hero, cortado pelo layout sem modificar o original. `04-profissional-ilustrativa.jpg` apenas em seção posterior, como ilustração. Textura recebida opcional em uma seção do conceito, com baixa intensidade.
-- **Alavancas:** grande superfície de cor, profundidade pela fotografia e ritmo entre azul e áreas claras. Inverte o acento sempre discreto: dourado ganha área apenas no botão principal.
-- **Paleta:** azul `#2c3e50` (fundo/texto); branco suave `#fcfcfa`; ouro `#d4af37` (CTA); apoio claro `#dde3e8`; areia `#e9e2d2` (aviso); azul profundo `#263949` (texto sobre ouro).
-- **Tipografia:** DM Sans 400/450/500/600, títulos e corpo na mesma família. Razão 1,25; H1 ~61 px no desktop, ~34 px no celular. Contorno aberto e peso moderado para evitar solenidade excessiva.
-- **Forma:** raio 2 px em controles; canto inferior esquerdo amplo no quadro do escritório (72 px). O canto funciona como passagem entre imagem e conteúdo. Sem caixas repetidas ou sombras decorativas.
-- **Layout:** bloco azul contínuo no topo; duas áreas abaixo sobre fundo claro, ao lado de um título de seção; depois apresentação do conceito, sequência de três etapas, artigos e FAQ.
+## Direção A — "A janela" (marcante)
 
-```text
-aviso de demonstração
-marca                         navegação
-fundo azul
-H1 + apoio + CTA              ambiente em grande quadro
-fim do fundo azul
-título da seção              Família        Trabalho
-conceito / método / artigos / FAQ / simulação
-```
+**Conceito:** a consulta como uma persiana que se abre. Quem chega está no escuro; cada etapa deixa entrar mais luz.
+**Dials:** variação 6 · movimento 6 · densidade 3
 
-- **Assinatura:** aproximação de 3,5% da imagem do escritório ao passar o ponteiro; em telas táteis ela permanece estática. `prefers-reduced-motion` desativa a aproximação. Não há parallax, pin ou conteúdo inicialmente oculto.
-- **Pranchas:** `projeto/pranchas/b.html`; `projeto/referencias/direcoes/b-1440.png` e `b-375.png`.
-- **Risco:** excesso de azul pode endurecer o conjunto; por isso as seções seguintes são claras e a fotografia recebe luz quente. Manter dourado longe de texto pequeno sobre branco.
+**Paleta:** `#1e2d3d` azul (fundo) · `#142130` azul profundo · `#d4af37` dourado · `#eef2f5` papel · `#9fb0c0` névoa
+**Tipografia:** Archivo (Google Fonts, eixo de largura). Títulos largos (wdth 108, peso 800); corpo normal.
 
-## C — Perspectiva
+**Hero:** duas colunas. À esquerda, H1 e ação sobre azul sólido; à direita, uma "janela" com o vídeo 15 (luz na persiana) atrás de 12 lâminas azuis. Ao rolar, as lâminas se fecham até sumir e a luz ocupa a janela.
+**Scroll no site:** "Como funciona" fixado na tela, com três etapas, e cada uma abre um terço da persiana. Resto da página estático.
+**H1:** "Família e trabalho, com clareza."
+**Mídia:** 15 (hero e método).
+**Referência:** Meer Mohsin, na troca de capítulos por máscara de forma. Aqui a máscara é a própria persiana e só roda em uma seção.
+**Risco:** é a mais segura das três e a menos surpreendente no primeiro segundo.
 
-- **Ambição:** uau.
-- **Ideia:** entrar visualmente no espaço de uma conversa importante.
-- **H1:** “Direito em Brasília. Novas perspectivas.”
-- **Apoio:** “Clareza para olhar o presente. Cuidado para pensar o próximo passo.”
-- **CTA:** “Simular consulta”.
-- **Referência:** [Money in Check](https://moneyincheck.org), da lista curada: título serifado monumental, objeto/ambiente e texto em planos de profundidade. Reinterpretamos em fotografia de ambiente ocupando o palco e tipografia no primeiro plano; sem xadrez, notas, grade ou tela de carregamento. No celular, a composição assume quatro linhas e conserva o CTA visível.
-- **Mídia:** `01-escritorio-geral.png` como fundo panorâmico; camada escura de proteção sob texto. Marca PM no cabeçalho, sem clientes fictícios em evidência.
-- **Alavancas:** escala tipográfica, profundidade por camadas e um único movimento de entrada. Inverte a economia de espaço com ocupação visual ampla.
-- **Paleta:** noite `#1b2e3b`; branco `#ffffff`; azul `#223542`; ouro claro `#e4c677`; apoio `#e1e5e9`; fundo de seção `#f9fafb`.
-- **Tipografia:** Bodoni Moda 400 nos títulos, Manrope 400/600 no corpo. Razão 1,333; H1 até ~102 px no desktop e ~45 px no celular. Contraste da serifa escolhido para uma composição de capa, não como fonte de texto corrido.
-- **Forma:** cantos retos, navegação por dois campos na base do palco; botão com superfície sólida.
-- **Layout:** hero imersivo, navegação das duas áreas integrada à base e seção seguinte com bastante respiro; conteúdo restante retoma hierarquia simples.
+**Pranchas:** `projeto/pranchas/a.html` · capturas `referencias/direcoes/a-1440.png`, `a-1440-scroll.png`, `a-375.png`
 
-```text
-aviso de demonstração
-imagem de ambiente em toda a largura
-marca / navegação sobre faixa protegida
-título monumental + apoio + CTA
-Família                       Trabalho
-seção clara / método / conteúdos / FAQ
-```
+---
 
-- **Assinatura:** imagem aproxima-se de escala 1,035 para 1 em 1,2 s ao abrir; texto já visível. Com movimento reduzido, imagem estática. Sem vídeo obrigatório, 3D ou rolagem travada.
-- **Pranchas:** `projeto/pranchas/c.html`; `projeto/referencias/direcoes/c-1440.png` e `c-375.png`.
-- **Risco:** mais solene; a serifa fina exige tamanho generoso e fundo protegido. A camada escura e o cabeçalho sólido evitam perda de contraste sobre a janela.
+## Direção B — "Clareza em ouro" (uau, **recomendada**)
 
-## Recomendação e autocrítica
+**Conceito:** a palavra que a cliente usa para se diferenciar vira o hero. "clareza" ocupa a tela e as letras são janelas para o vídeo de partículas douradas. Ao rolar, a câmera **atravessa** a palavra: as letras crescem até o ouro tomar a tela inteira, e o site continua do outro lado.
+**Dials:** variação 7 · movimento 8 · densidade 3
 
-**B — Presença** traduz melhor o visual marcante/acolhedor solicitado. A funciona para uma direção silenciosa; C, para priorizar impacto de portfólio.
+**Paleta:** `#131f2c` azul noite (fundo) · `#1e2d3d` azul PM · `#d4af37` dourado · `#f1f4f7` papel · `#a3b3c2` névoa
+**Tipografia:** Bricolage Grotesque, condensada no display (wdth 75, peso 800) e média nos títulos. Corpo em Instrument Sans.
+**Forma:** botões em pílula, cartões com raio de 16 px.
 
-Removidos contadores, depoimentos de resultado, etiquetas decorativas sobre imagens e conjunto de ícones com três estilos incompatíveis. As três alternativas variam fonte, enquadramento e estrutura, mantendo a identidade recebida.
+**Hero:** vídeo 14 em tela cheia, com uma camada azul em `multiply` que deixa o vídeo aparecer só dentro das letras. H1, apoio e ação ficam na base, à esquerda. Seção fixada de ~2,2 telas: a palavra escala 14× e o texto da base sai.
+**Escolhida pelo dev em 2026-09-28**, com três acréscimos e a revelação da Paola:
+- **Abertura com o logo PM** (técnica do Moto Card). Na primeira visita, o logo claro (letras em papel, balança em ouro) aparece sobre o azul, fica cerca de 1 s e se dissolve em escala e desfoque, revelando o hero. Total de 2,4 s, só CSS, sem bloquear o conteúdo, que já está no HTML. Aparece uma vez por sessão e some com `reduce`.
+- **Revelação da Paola.** Depois de atravessar "clareza", o ouro toma a tela e surge o vídeo 10 (a Paola, conforme o dev) com "Prazer, Paola." e o texto de apresentação.
+- **Clarão dourado** no instante da passagem: um brilho radial em `screen` acende e apaga, e a Paola emerge da luz.
+- **Assinatura:** "Paola Marra" em letra manuscrita dourada (Herr Von Muellerhoff), escrita da esquerda para a direita conforme o scroll. Troca pela assinatura real se o dev enviar.
 
-## Verificação das pranchas
+**Scroll no site:**
+1. Hero: logo → "clareza" → atravessar a palavra → clarão → Paola → assinatura (momento principal, seção fixada de ~4 telas).
+2. "Como funciona" (aprovado 2026-09-28): três etapas fixadas, com número grande em ouro e texto trocando, sem cartões. Ao fundo, a luz da persiana (vídeo 15) abre um terço a cada etapa, com lâminas azuis encolhendo como na prancha A.
+3. Áreas: Família e Trabalho lado a lado, com a lista de serviços revelada ao passar (sem scroll hijack).
+4. Chamada final (aprovado): as partículas descem e assentam numa linha de luz atrás de "Agendar consulta" (vídeo do prompt 4; reserva: vídeo 14 a 0,5× de velocidade).
+5. Páginas Família e Trabalho (aprovado): o topo repete a palavra-janela em escala menor, "família" ou "trabalho" com o vídeo 14 dentro das letras, sem travessia. O H1 da página fica abaixo.
+6. Confirmação do agendamento (aprovado): ao confirmar, um brilho dourado curto sobe do botão (Motion, ~600 ms) e a mensagem de demonstração entra. Sem vídeo.
+Tudo com `prefers-reduced-motion`: sem escala e sem seção fixada.
 
-- Breakpoints: 320, 375, 768, 1024, 1280, 1440 e 1536 px. Evidência em `projeto/referencias/direcoes/verificacao.json`.
-- Capturas finais em 1440 × 900 e 375 × 812. Menu, diálogo, conteúdo sem JavaScript e movimento reduzido verificados; isso não substitui a revisão do site na construção.
-- Contrastes das cores planas em `projeto/referencias/direcoes/contraste.json`; texto sobre fotografia usa proteção escura, a conferir novamente no layout final.
-- Imagens apenas enquadradas por CSS nesta fase; originais preservados. Não há implementação do site.
+**H1:** "Família e trabalho em Brasília, sem juridiquês."
+**Mídia:** 14 (hero e CTA final), 10 (revelação da Paola), 15 (fundo discreto do "Como funciona"), logo 03 na navegação e na abertura (versão clara).
+**Referências:** Meer Mohsin (texto entre camadas: aqui o vídeo fica *dentro* da tipografia); Moto Card (objeto único e forte sobre fundo escuro; aqui o objeto é a palavra); Money in Check (título monumental).
+**Por que recomendo:** o efeito mais surpreendente das três conta exatamente o diferencial da cliente, e o vídeo 14 não mostra pessoa, escritório nem texto (zero risco no nicho). É quente pelo dourado, não corporativo.
+**Risco:** fundo escuro pode soar frio; compensado com dourado generoso, texto claro e seções internas mais leves em `#1e2d3d`. Vídeo 14 é 720p: pedir versão 1080p e vertical (ver MIDIA).
 
-## Escolhida no portão
+**Pranchas:** `projeto/pranchas/b.html` · capturas em `referencias/direcoes/`: `b-1440-abertura.png`, `b-1440.png`, `b-1440-travessia.png`, `b-1440-clarao.png`, `b-1440-paola.png`, `b-1440-assinatura.png` (e as mesmas em 375)
 
-Ainda não escolhida. Aguardando escolha/ajustes do dev e autorização “pode construir”.
+---
+
+## Direção C — "Porta aberta" (uau narrativo)
+
+**Conceito:** o site como uma visita. O scroll conduz a câmera pelo escritório (vídeo 11), da porta até a janela, e cada trecho da visita é um capítulo: Entrada, Família, Trabalho, Como funciona, Consulta.
+**Dials:** variação 8 · movimento 9 · densidade 2
+
+**Paleta:** `#0f1a26` tinta · `#1e2d3d` azul · `#d4af37` dourado · `#f3f1ec` papel · `#b3bfca` névoa
+**Tipografia:** Schibsted Grotesk, peso 900 nos títulos (compacto, pesado) e 400 no corpo.
+
+**Hero:** vídeo 11 em tela cheia, com véu escuro nas bordas. O H1 enorme fica embaixo à esquerda e o índice de capítulos à direita, com barra dourada de progresso. Seção fixada de ~3 telas, com o scroll controlando o tempo do vídeo.
+**Scroll no site:** a página inteira é a visita, com capítulos fixados; no celular, o índice some e o vídeo toca normalmente.
+**H1:** "Entre. A lei, explicada com calma."
+**Mídia:** 11 (principal), 10 como apoio opcional (pessoa ilustrativa, com legenda de demonstração).
+**Referências:** Meer Mohsin (página inteira em capítulos fixados); Apple iPhone da lista curada (vídeo controlado pelo scroll, técnica conhecida; não reanalisado).
+**Risco:** o escritório com vista para arranha-céus sugere o "grande escritório impessoal" que a cliente não quer, e um espaço que não existe. Vídeo controlado pelo scroll pesa mais (vídeo precisa de keyframe a cada quadro) e exige mais cuidado no celular.
+
+**Pranchas:** `projeto/pranchas/c.html` · capturas `referencias/direcoes/c-1440.png`, `c-1440-scroll.png`, `c-375.png`
+
+---
+
+## Recomendação
+
+**Direção B**, escolhida pelo dev em 2026-09-28. A e C ficam registradas como alternativas descartadas.

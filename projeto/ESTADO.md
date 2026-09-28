@@ -4,11 +4,11 @@
 
 ## Agora
 
-- **Fase atual:** 2 — Pacote criativo (não iniciada)
-- **Próximo passo:** preparar três direções e o pacote recomendado usando as mídias recebidas; nenhuma resposta obrigatória pendente para o planejamento.
-- **Modelo recomendado:** Opus (referência da skill para planejamento; sessão atual no Codex)
-- **Versionamento:** modo 1 — GitHub Desktop; Codex não faz commit nem push.
-- **Última atualização:** 2026-09-27 por Codex
+- **Fase atual:** 4 — Construção, revisão e relatório (não iniciada)
+- **Próximo passo:** `/clear`, `/model sonnet` e "vamos continuar"; a construção autônoma segue `projeto/DIRECAO.md` (direção B), `projeto/COPY.md`, `projeto/MIDIA.md` e a Stack abaixo.
+- **Modelo recomendado:** Sonnet
+- **Versionamento:** modo 1 — GitHub Desktop; Claude/Codex não fazem commit nem push.
+- **Última atualização:** 2026-09-28 por Claude Code (retomada após o Codex ficar sem créditos)
 - **Modo:** teste/portfólio — cenário fictício autorizado; identificação de demonstração; sem atendimento real ou publicação autorizada.
 
 ## Fases
@@ -17,8 +17,8 @@
 |---|---|---|---|---|
 | Planejamento | 0 | Ambiente | Concluída | Git local, dependências e Chromium conferidos |
 | | 1 | Briefing e nicho | Concluída | `projeto/BRIEF.md` atualizado para demonstração |
-| | 2 | Pacote criativo | Não iniciada | `projeto/DIRECAO.md`, `projeto/COPY.md`, `projeto/MIDIA.md` |
-| | 3 | Portão | Não iniciada | Aguardando "pode construir" |
+| | 2 | Pacote criativo | Concluída | `projeto/DIRECAO.md` (v2, B recomendada), `projeto/COPY.md`, `projeto/MIDIA.md`, pranchas em `projeto/pranchas/` |
+| | 3 | Portão | Concluída | "Pode construir" em 2026-09-28, direção B |
 | Execução autônoma | 4 | Construção, revisão e relatório | Não iniciada | `projeto/REVISAO.md`, `projeto/RELATORIO.md` |
 | Refinamento | 5 | Refinamento livre | Não iniciada | — |
 | Entrega | 6 | Preview, feedback, lançamento e portfólio | Não iniciada | — |
@@ -37,10 +37,29 @@
 - 2026-09-27 — Dev esclareceu que o site é apenas para portfólio; Paola existe e quer ser advogada. Dados específicos fictícios autorizados, sempre contextualizados como demonstração, sem atribuir credenciais reais à Paola.
 - 2026-09-27 — Nove imagens geradas pelo dev recebidas e autorizadas para uso na demonstração. Pessoas/ambientes ilustrativos; não são documentação real do negócio.
 - 2026-09-27 — Escopo adaptado à demonstração: agendamento, contato e newsletter simulados localmente, sem prestação real, envio ou coleta de dados. Integrações reais deixam de ser pendências desta etapa.
+- 2026-09-28 — Dev pediu site marcante e uau, com vídeo, efeitos de scroll, animações e hero surpreendente; as três direções passam a ir de marcante a uau (sem direção discreta). Sete vídeos do Google Flow recebidos (10 a 16); 13 descartado por texto e marca de terceiros.
+- 2026-09-28 — Dev escolheu a direção B "Clareza em ouro" e pediu para melhorá-la antes do "pode construir". Acréscimos aprovados: abertura com o logo PM, clarão dourado na revelação e assinatura escrita com o scroll. Depois, também: "Como funciona" com a persiana, chamada final com partículas assentando, palavra-janela no topo de Família e Trabalho, brilho na confirmação do agendamento.
+- 2026-09-28 — **Portão aprovado: "pode construir"** (dev, BrandForge). Direção final: B "Clareza em ouro", com os acréscimos acima. Copy com CTA único "Agendar consulta"; mídia com vídeos 10, 15, 17 a 20 e logo PM; stack registrada abaixo.
+- 2026-09-28 — Dev informou que o vídeo 10 retrata a Paola e autorizou o uso como revelação surpresa após o hero ("Prazer, Paola."). Continua sem atribuir credenciais reais; o aviso de demonstração permanece. Na construção, cortar o trecho com logo da Apple e capa de livro legível.
 
 ## Stack
 
-- Base do template: Next.js + TypeScript + Tailwind; camadas adicionais serão decididas no portão.
+Decidida no portão para a direção B (aprovada). As linhas com * valeriam revisão só se a direção mudasse.
+
+- Base: Next.js + TypeScript + Tailwind v4, deploy de preview na Vercel (não indexável).
+- GSAP + ScrollTrigger: sim. Dois momentos com pin e scrub: atravessar a palavra no hero e "Como funciona" fixado.*
+- Lenis: sim, só na página inicial, porque há scrub. Fica fora das páginas com formulário (agendar) e desliga com `prefers-reduced-motion`.*
+- Motion: sim, para interação de componente: passos do agendamento (`AnimatePresence`), painel de mensagem e perguntas frequentes.
+- SplitText: não. A palavra escala inteira, sem animar letra por letra.
+- 3D / WebGL / sequência em canvas: não. O efeito é vídeo + tipografia. (C usaria vídeo controlado pelo scroll com keyframe a cada quadro.)*
+- View Transitions: não. Poucas páginas, sem transição lista → detalhe.
+- Rive / Lottie: não.
+- Vídeo: peça `VideoComPoster`, com poster no HTML, MP4 + WebM, carregamento perto do viewport e poster em `reduce`.
+- Fontes: `next/font/google` com Bricolage Grotesque (display) + Instrument Sans (corpo) + Herr Von Muellerhoff (só a assinatura).
+- Abertura com logo, clarão e assinatura: CSS puro (animação de carga e `animation-timeline: scroll()`), com fallback por GSAP ScrollTrigger nos navegadores sem suporte a timeline de scroll. A abertura roda uma vez por sessão e nunca esconde o conteúdo do HTML.
+- Formulários (agendamento, mensagem, newsletter): só no navegador, sem Server Action, sem envio e sem armazenamento; `FormularioContato` não entra. A `seguranca-web` revisa mesmo assim (nada sai do navegador, headers, sem scripts de terceiros).
+- Dados estruturados: sem `JsonLdNegocio` (proibido schema de escritório real); só `WebSite` básico. Preview com `noindex`.
+- Hero sem JS: H1, apoio, CTA e poster com a palavra visíveis sem animação.
 
 ## Progresso da execução autônoma
 
@@ -58,7 +77,9 @@
 - [x] Corrigir grafia de domínio e e-mail para paolamarra — dev. Instagram adiado.
 - [x] Receber mídia: nove imagens, incluindo logo, ambientes, pessoas ilustrativas, ícones e textura; inventário em `projeto/referencias/midia/INVENTARIO.md`.
 - [x] Retirar pendências de domínio/e-mail operacional, endereço real, Google Maps, Calendly e serviço de newsletter: não necessários para a demonstração.
-- [ ] Preparar pacote criativo e interações demonstrativas — Codex. Instagram omitido e validação pela Paola dispensada.
+- [x] Preparar pacote criativo e interações demonstrativas — Claude Code, 2026-09-28.
+- [x] Vídeos dos prompts 1 a 4 gerados pelo dev e recebidos (17 a 20), 2026-09-28.
+- [ ] Corpo dos 2 artigos e prazo trabalhista da FAQ: redigir e conferir em fonte oficial na construção — agente.
 
 ## Cuidados da demonstração
 
@@ -82,3 +103,5 @@
 - 2026-09-27 — Respostas recebidas e briefing elaborado. Nicho advocacia conferido em fontes oficiais da OAB; aplicação editorial e validação da Paola pendentes. Referências pesquisadas; sem código, commit ou push.
 - 2026-09-27 — Briefing confirmado com correção de grafia, Instagram adiado e validação pela cliente dispensada expressamente. Prazo tratado como indefinido; mensagem de materiais preparada para o dev enviar. Próxima fase: pacote criativo.
 - 2026-09-27 — Projeto reclassificado como demonstração de portfólio. Nove mídias copiadas e conferidas; briefing e pendências ajustados. Nenhuma imagem editada, código do site alterado ou commit realizado.
+- 2026-09-28 — Retomado no Claude Code. Referências Meer Mohsin e Moto Card analisadas (OpenAI Astra bloqueou o navegador). Pacote v2 com vídeo: A "A janela", B "Clareza em ouro" (recomendada), C "Porta aberta". CTA único "Agendar consulta" (consulta é paga no cenário). Sem código do site, sem commit.
+- 2026-09-28 — Dev escolheu B; entraram a revelação da Paola (vídeo 10), abertura com logo, clarão, assinatura e os efeitos das demais seções. Vídeos 17 a 20 recebidos. Portão aprovado; fase 4 liberada.

@@ -1,223 +1,182 @@
-# Copy recomendada — B / Presença
+# Copy — Paola Marra | Advocacia
 
-> DEMONSTRAÇÃO — DADO FICTÍCIO. Todo serviço, área, localidade e fluxo abaixo pertence ao conceito de portfólio. Paola existe, mas nenhuma qualificação profissional, estrutura ou atendimento real é atribuída a ela.
+> DEMONSTRAÇÃO — DADO FICTÍCIO. Os textos descrevem um cenário conceitual de portfólio. Não apresentam formação, inscrição, clientela ou resultados reais da Paola.
 
-Pacote para aprovação única no portão. Sem biografia inventada, registro de OAB, estatísticas, depoimentos, preços ou Instagram. Se outra direção for escolhida, atualizar o hero e os trechos dependentes antes da construção.
+## Convenções (decididas; corrigir no portão se quiser)
 
-## Voz e regras comuns
+- **Tom:** calmo, direto, próximo. Frases curtas. Fala com "você". A Paola aparece em terceira pessoa, com parcimônia. Nada de juridiquês: quando um termo técnico for inevitável, vem explicado na mesma frase.
+- **Rótulo único do CTA:** **Agendar consulta**. Mesmo texto no menu, hero, páginas e rodapé. A consulta inicial é paga no cenário, então "conversa" daria a entender que é gratuita.
+- **Travessão:** não se usa travessão (— ou –) em nenhum texto do site. Usa-se ponto, vírgula, dois-pontos ou parênteses.
+- **Maiúsculas:** só no início de frase e em nomes próprios. Sem rótulos em caixa alta.
+- **Regras do nicho (BRIEF §2, Provimento 205/2021 como referência):** sem preço, gratuidade, parcelamento, depoimento, avaliação, número de casos, promessa de resultado ou comparação com outros profissionais. Sem "especialista". Sem número de OAB: "Registro profissional: demonstração".
+- **Aviso fixo em todas as páginas:** "Projeto conceitual para portfólio. Informações e imagens ilustrativas; não oferece atendimento jurídico."
 
-- Voz: clara, próxima e cuidadosa. Soa como o conceito: “Uma conversa clara começa com espaço para perguntar.” Evitar: “Excelência jurídica para transformar resultados.”
-- Travessões na interface: evitar; usar períodos e vírgulas.
-- Consulta demonstrativa: **Simular consulta**, em todos os pontos.
-- Navegação de áreas: **Conhecer as áreas**. Links específicos: **Conhecer Família** e **Conhecer Trabalho**.
-- Aviso no topo, em todas as páginas: “Projeto conceitual para portfólio. Informações e imagens ilustrativas. Sem atendimento real.” No celular, versão curta: “Projeto conceitual para portfólio. Sem atendimento real.”
-- Nome de marca do cenário: “Paola Marra” / “Advocacia”.
-- Navegação: “Áreas de atuação”, “O conceito”, “Conteúdos”, “Simular consulta”. Menu móvel: “Menu”; fechar: “Fechar menu”.
-- Breadcrumbs: “Início”, “Família”, “Trabalho”, “Conteúdos”; último item é o título da página.
-- Todos os títulos de metadata incluem “Conceito” ou “Demonstração”. `robots: noindex, nofollow` no preview. Não criar schema de advogado real, avaliações ou endereço comercial.
+## Mapa do site
 
-## Mapa de páginas e ordem
+| Página | Rota | Seções |
+|---|---|---|
+| Início | `/` | Abertura (logo) · Hero · Prazer, Paola · Como funciona · Áreas · Por que linguagem simples · Atendimento · Perguntas frequentes · Artigos · Chamada final |
+| Direito de Família | `/familia` | Abertura · O que inclui · Como funciona nesse tema · Perguntas · Chamada |
+| Direito do Trabalho | `/trabalho` | Abertura · O que inclui · Como funciona nesse tema · Perguntas · Chamada |
+| Artigos | `/artigos` | Lista · 2 artigos demonstrativos |
+| Agendar consulta | `/agendar` | Fluxo demonstrativo em 3 passos · confirmação demonstrativa |
+| Privacidade | `/privacidade` | Como a demonstração trata dados |
+| 404 | — | Página não encontrada |
 
-1. `/`: hero → áreas → conceito → etapas → conteúdos → FAQ → contato/newsletter demonstrativos → rodapé.
-2. `/familia`: introdução → temas → preparação da conversa → CTA.
-3. `/trabalho`: introdução → temas → preparação da conversa → CTA.
-4. `/conteudos`: introdução → dois artigos demonstrativos → newsletter.
-5. `/conteudos/organizar-uma-conversa`: artigo sobre organização de dúvidas.
-6. `/conteudos/registrar-informacoes`: artigo sobre organizar informações.
-7. `/privacidade`: funcionamento da demonstração e dados.
-8. Página 404, diálogo de simulação e estados dos formulários.
+Navegação: Família · Trabalho · Como funciona · Artigos · [Agendar consulta]
 
-## Página `/`
+---
 
-- Title: “Paola Marra | Conceito de advocacia em Brasília”.
-- Description: “Projeto de portfólio sobre advocacia de Família e Trabalho. Explore o conceito visual e as interações demonstrativas, sem atendimento real.”
+## Início
+
+**SEO** · title: `Paola Marra Advocacia · Família e Trabalho em Brasília` (54) · description: `Conceito de site de advocacia de família e do trabalho em Brasília, com linguagem simples e cada etapa explicada. Projeto de portfólio.` (138)
 
 ### Hero
+- Palavra gráfica (decorativa, `aria-hidden`): **clareza**
+- **H1:** Família e trabalho em Brasília, sem juridiquês.
+- **Apoio:** Você entende cada etapa antes de decidir. A primeira consulta existe para isso. (14 palavras)
+- **CTA:** Agendar consulta
 
-- Contexto: “Direito de Família e do Trabalho em Brasília”.
-- H1: “Família e trabalho. Direito com clareza.”
-- Apoio: “Escuta, linguagem simples e atenção ao que importa em cada etapa da sua vida.”
-- CTA: “Simular consulta”. Secundário: “Conhecer as áreas”.
-- Alt: “Ambiente de escritório ilustrativo, com madeira e luz natural”.
-- Legenda: “Ambiente gerado para este projeto conceitual.”
+### Prazer, Paola (revelação após o hero)
+- **Título (H2):** Prazer, Paola.
+- **Assinatura (decorativa, `aria-hidden`):** Paola Marra
+- **Texto:** Do outro lado de cada termo difícil, uma pessoa que explica com calma e escuta o que você tem a dizer.
+- **Texto alternativo do vídeo:** "Paola Marra à mesa de trabalho, sorrindo para a câmera."
 
-### Áreas de atuação
+### Como funciona
+- **Título:** Primeiro você entende. Depois decide.
+- **1 · Consulta inicial.** Você conta o que está acontecendo, no seu tempo. Sai sabendo quais caminhos existem e o que cada um exige.
+- **2 · Plano explicado.** Se decidir seguir, recebe por escrito os próximos passos, os documentos necessários e o que depende de você.
+- **3 · Acompanhamento.** A cada movimentação, uma explicação curta do que aconteceu e do que vem a seguir. Sem você precisar perguntar.
 
-- H2: “Questões diferentes. A mesma atenção.”
-- Introdução: “Duas áreas ligadas à vida cotidiana, apresentadas com cuidado e sem juridiquês.”
-- H3: “Direito de Família”. Texto: “Divórcio, guarda e pensão. Espaço para entender os temas que atravessam a vida em família.” Link: “Conhecer Família”.
-- H3: “Direito do Trabalho”. Texto: “Relações de trabalho, rescisão e assédio. Informação para organizar dúvidas e próximos passos.” Link: “Conhecer Trabalho”.
+### Áreas
+- **Título:** Duas áreas, com atenção inteira.
+- **Direito de Família.** Para quando a família muda de forma. Divórcio consensual ou litigioso, guarda dos filhos e pensão alimentícia. · link: Ver Direito de Família
+- **Direito do Trabalho.** Para quando o trabalho termina mal ou pesa demais. Rescisão, assédio moral e ação trabalhista. · link: Ver Direito do Trabalho
 
-### O conceito
+### Por que linguagem simples
+- **Título:** Ninguém decide bem com medo.
+- **Texto:** Muita gente chega a um processo sem entender o que está acontecendo. Aqui, cada termo é traduzido e cada decisão é sua, tomada com informação.
 
-- H2: “Uma conversa clara começa com espaço para perguntar.”
-- Texto: “Este projeto imagina uma advocacia próxima: linguagem acessível, escuta cuidadosa e explicações organizadas. Família e trabalho aparecem como partes da vida, com dúvidas que merecem atenção.”
-- Texto secundário: “Paola Marra é o nome que inspira o conceito. A atuação profissional, as instalações e os serviços apresentados fazem parte de um cenário fictício criado para portfólio.”
-- Alt da imagem: “Cena ilustrativa gerada de uma profissional à mesa”.
-- Legenda: “Imagem ilustrativa gerada. Não é um retrato da Paola.”
-
-### Etapas
-
-- H2: “Do primeiro contato a uma conversa organizada.”
-- Introdução: “Explore como seria a experiência de atendimento neste conceito.”
-- Passo 1, título: “Conte o tema”. Texto: “Escolha Família ou Trabalho para começar a simulação.”
-- Passo 2, título: “Escolha o formato”. Texto: “Conheça as opções ilustrativas de conversa online ou presencial.”
-- Passo 3, título: “Veja o próximo passo”. Texto: “A demonstração organiza as escolhas e mostra uma confirmação, sem marcar uma consulta real.”
-- CTA: “Simular consulta”.
-
-### Conteúdos
-
-- H2: “Mais clareza, uma leitura de cada vez.”
-- Introdução: “Textos demonstrativos sobre organizar perguntas e informações para uma conversa profissional.”
-- Artigo 1: “Como organizar suas dúvidas antes de uma conversa”. Resumo: “Um ponto de partida para colocar perguntas, datas e prioridades em ordem.” Link: “Ler artigo”.
-- Artigo 2: “Um jeito simples de registrar informações importantes”. Resumo: “Anotações claras ajudam a contar uma situação sem perder o fio da conversa.” Link: “Ler artigo”.
-- Link geral: “Ver conteúdos”.
+### Atendimento
+- **Título:** Presencial em Brasília ou online.
+- **Texto:** A consulta pode ser no escritório, em Brasília, ou por vídeo, para quem está no DF e entorno. Você escolhe ao agendar.
+- **Horários (cenário):** segunda a sexta, das 9h às 18h. Sábado, das 9h às 13h.
 
 ### Perguntas frequentes
+1. **Quanto tempo demora um processo?** Depende do tipo de caso, de haver acordo e do andamento do Judiciário. Na consulta, você recebe uma estimativa realista para a sua situação, sem promessas de prazo.
+2. **Meu caso é simples. Preciso mesmo de advogada?** Casos simples também têm detalhes que fazem diferença. A consulta serve para você entender se precisa, e de quê.
+3. **Posso fazer tudo online?** Sim. Consulta, envio de documentos e acompanhamento podem ser feitos à distância.
+4. **O que levo para a primeira consulta?** O que você tiver: documentos, mensagens, datas. Se faltar algo, você sai sabendo o que providenciar.
+5. **O que eu conto fica em sigilo?** Sim. O sigilo profissional vale desde a primeira consulta.
 
-- H2: “Algumas respostas antes de começar.”
-- “Este site oferece atendimento jurídico?” — “Não. Este é um projeto conceitual para portfólio. Não há contratação, consulta ou representação jurídica por este site.”
-- “Posso agendar uma consulta?” — “Você pode explorar a simulação. Os formatos e horários são ilustrativos; nenhuma consulta será marcada.”
-- “As pessoas e o escritório das imagens são reais?” — “As imagens foram geradas para compor o projeto. Não representam retratos confirmados da Paola, clientes ou um escritório em operação.”
-- “É possível prever o tempo de um processo?” — “A duração depende das características do caso e do procedimento. Este projeto não faz estimativas individuais nem promete prazos ou resultados.”
-- “Onde aparecem os valores dos serviços?” — “O conceito não apresenta oferta comercial ou tabela de honorários. A simulação não cobra nenhum valor.”
-- “O formulário envia minhas informações?” — “Não. Ele demonstra a interação na própria página, sem enviar ou guardar os campos preenchidos.”
+### Artigos (chamada)
+- **Título:** Para ler com calma.
+- Cartões com os dois artigos (título + resumo). Link: Ver todos os artigos
 
-### Contato demonstrativo
+### Chamada final
+- **Título:** Quando quiser, a gente começa pela conversa.
+- **Apoio:** Escolha o tema, a forma de atendimento e um horário.
+- **CTA:** Agendar consulta
 
-- H2: “Experimente o primeiro contato.”
-- Texto: “Veja como seria a interação. Use dados de exemplo: nenhuma mensagem será enviada.”
-- Campos: “Nome de exemplo”; “E-mail de exemplo”; “Assunto”; “Mensagem de exemplo”.
-- Opções de assunto: “Família”, “Trabalho”, “Outro assunto”.
-- Botão: “Simular envio”.
-- Ajuda: “Não inclua documentos, dados de terceiros ou detalhes de um caso real.”
-- Link contextual: “Como funciona a demonstração”.
+---
 
-### Newsletter demonstrativa
+## Direito de Família
 
-- H2: “Conteúdo que cabe na rotina.”
-- Texto: “Conheça a experiência de inscrição do projeto. Nenhum e-mail será cadastrado ou enviado.”
-- Campo: “E-mail de exemplo”. Placeholder: “voce@example.com”.
-- Botão: “Simular inscrição”.
+**SEO** · title: `Direito de Família em Brasília · Paola Marra Advocacia` (53) · description: `Divórcio, guarda e pensão alimentícia explicados em linguagem simples, com cada etapa combinada. Conceito de site para portfólio.` (129)
 
-## Página `/familia`
+- **H1:** Direito de Família em Brasília
+- **Abertura:** Separação, guarda e pensão mexem com a casa inteira. O objetivo é resolver com o menor desgaste possível, e com você sabendo o que está acontecendo.
+- **O que inclui:**
+  - **Divórcio consensual.** Quando o casal concorda com os termos. Costuma ser o caminho mais rápido e menos desgastante.
+  - **Divórcio litigioso.** Quando não há acordo. Você entende cada fase antes de ela começar.
+  - **Guarda dos filhos.** Definição de com quem as crianças moram e como fica a convivência.
+  - **Pensão alimentícia.** Pedido, revisão ou ajuste do valor, conforme a necessidade e a possibilidade de cada parte.
+- **Como funciona nesse tema:** Na consulta, você conta a situação da família. Se houver chance de acordo, ela é considerada primeiro. Se não houver, você recebe o plano por escrito antes de qualquer passo.
+- **Perguntas:**
+  - **Dá para fazer divórcio sem ir ao fórum?** Em alguns casos, sim, por cartório. Na consulta você descobre se o seu se encaixa.
+  - **A pensão pode mudar depois?** Pode ser revista quando a situação de quem paga ou de quem recebe muda.
+- **Chamada:** Conte o que está acontecendo. · CTA: Agendar consulta
 
-- Title: “Direito de Família | Paola Marra, conceito”.
-- Description: “Conheça a área de Família neste projeto conceitual: divórcio, guarda e pensão apresentados com linguagem acessível. Sem atendimento real.”
-- H1: “Direito de Família, com espaço para conversar.”
-- Apoio: “Um olhar cuidadoso para dúvidas que envolvem vínculos, mudanças e organização da vida familiar.”
-- CTA: “Simular consulta”.
+## Direito do Trabalho
 
-### H2: “Temas deste conceito”
+**SEO** · title: `Direito do Trabalho em Brasília · Paola Marra Advocacia` (54) · description: `Rescisão, assédio moral e ação trabalhista explicados com clareza, do primeiro documento ao fim do processo. Conceito de site para portfólio.` (141)
 
-- H3: “Divórcio”. Texto: “A organização de uma separação pode trazer perguntas sobre acordos, documentos e próximos passos. O conceito apresenta esse tema com linguagem clara e sem antecipar respostas para casos individuais.”
-- H3: “Guarda e convivência”. Texto: “A rotina familiar envolve responsabilidades e decisões importantes. Esta seção demonstra como apresentar o assunto de forma respeitosa, sem expor histórias de famílias ou crianças.”
-- H3: “Pensão alimentícia”. Texto: “Perguntas sobre pensão fazem parte do cenário editorial. O projeto não calcula valores, prevê decisões ou oferece orientação individual.”
+- **H1:** Direito do Trabalho em Brasília
+- **Abertura:** O fim de um emprego, ou um ambiente que adoece, deixa muitas dúvidas. Aqui você entende quais são os seus direitos e o que dá para fazer.
+- **O que inclui:**
+  - **Rescisão.** Conferência das verbas e dos documentos da saída, para você saber se está tudo certo.
+  - **Assédio moral.** Orientação sobre como registrar o que aconteceu e quais caminhos existem.
+  - **Ação trabalhista.** Quando é preciso ir à Justiça do Trabalho, cada etapa é explicada antes de acontecer.
+- **Como funciona nesse tema:** Leve o que tiver: termo de rescisão, contracheques, mensagens, datas. Na consulta você sai sabendo o que falta e se vale seguir.
+- **Perguntas:**
+  - **Existe prazo para entrar com ação?** Existe, e ele corre desde a saída do emprego. Por isso vale buscar orientação cedo. *(Conferir prazo e redação em fonte oficial na construção: CF art. 7º, XXIX.)*
+  - **Procurar orientação pode me prejudicar?** Buscar informação sobre os seus direitos é direito seu.
+- **Chamada:** Traga suas dúvidas e seus documentos. · CTA: Agendar consulta
 
-### H2: “Começar pelas perguntas”
+---
 
-- Texto: “Uma lista curta pode ajudar a organizar uma conversa: o que você quer compreender, quais acontecimentos considera importantes e o que ainda precisa esclarecer.”
-- Nota: “Não envie documentos ou informações de um caso real por esta demonstração.”
-- Link: “Ler sobre organização de dúvidas”.
-- CTA final: “Simular consulta”.
+## Artigos (demonstrativos)
 
-## Página `/trabalho`
+**SEO** · title: `Artigos · Paola Marra Advocacia` (31) · description: `Textos curtos sobre direito de família e do trabalho, em linguagem simples. Conteúdo informativo de um conceito de site para portfólio.` (135)
 
-- Title: “Direito do Trabalho | Paola Marra, conceito”.
-- Description: “Explore a apresentação de temas trabalhistas neste projeto de portfólio. Conteúdo demonstrativo, sem consultas ou análise de casos.”
-- H1: “Direito do Trabalho, com informação compreensível.”
-- Apoio: “Questões da rotina profissional apresentadas de forma organizada, sem promessas ou respostas prontas.”
-- CTA: “Simular consulta”.
+- **H1:** Artigos
+- **Apoio:** Textos curtos para entender antes de decidir. Conteúdo informativo; não substitui orientação para o seu caso.
 
-### H2: “Temas deste conceito”
+1. **Divórcio em cartório: quando é possível** · resumo: Nem todo divórcio precisa passar pelo fórum. Veja quando o cartório é um caminho e o que ele exige.
+2. **Rescisão: o que conferir antes de assinar** · resumo: Uma lista curta do que olhar nos documentos da saída, para não deixar nada para trás.
 
-- H3: “Rescisão”. Texto: “O encerramento de uma relação de trabalho pode despertar dúvidas sobre documentos e informações recebidas. Esta página demonstra a apresentação do tema, sem calcular verbas ou avaliar contratos.”
-- H3: “Assédio no trabalho”. Texto: “Situações difíceis no ambiente profissional merecem ser tratadas com cuidado. O projeto não classifica experiências individuais nem recebe relatos ou provas.”
-- H3: “Questões trabalhistas”. Texto: “O cenário inclui dúvidas sobre relações de trabalho. Qualquer análise de direitos, medidas ou prazos depende de atendimento profissional fora desta demonstração.”
+Corpo dos artigos: **a preencher** na construção (até ~500 palavras cada), redigido a partir de fonte oficial (planalto.gov.br, CNJ, TST) e citada no rodapé do artigo; sem apresentar revisão profissional que não houve. Cada artigo termina com: "Este texto é informativo e faz parte de um projeto conceitual. Não substitui orientação jurídica."
 
-### H2: “Informações em ordem, conversa mais clara”
+---
 
-- Texto: “Separar acontecimentos por data e anotar as perguntas principais ajuda a apresentar uma situação com mais organização.”
-- Nota: “Guarde documentos pessoais em local seguro. Não inclua informações reais no formulário demonstrativo.”
-- Link: “Ler sobre organização de informações”.
-- CTA final: “Simular consulta”.
+## Agendar consulta (fluxo demonstrativo)
 
-## Página `/conteudos`
+**SEO** · title: `Agendar consulta · Paola Marra Advocacia` (40) · description: `Demonstração de agendamento: escolha o tema, a forma de atendimento e um horário. Nenhum dado é enviado.` (104)
 
-- Title: “Conteúdos | Paola Marra, projeto conceitual”.
-- Description: “Leituras demonstrativas sobre organizar dúvidas e informações. Conteúdo de portfólio, sem aconselhamento jurídico individual.”
-- H1: “Clareza também se constrói na leitura.”
-- Apoio: “Textos curtos que mostram a proposta editorial deste projeto de portfólio.”
-- Listagem: os dois artigos e resumos definidos na home.
-- Aviso: “Conteúdo demonstrativo. Não substitui orientação profissional e não analisa situações individuais.”
-- Newsletter: textos da seção comum.
+- **H1:** Agendar consulta
+- **Aviso do fluxo:** Este agendamento é uma demonstração. Nada do que você preencher sai do seu navegador.
+- **Passo 1 · Tema:** Qual é o assunto? · opções: Família · Trabalho · Ainda não sei
+- **Passo 2 · Formato:** Como prefere o atendimento? · opções: No escritório, em Brasília · Por vídeo
+- **Passo 3 · Horário:** Escolha um horário. · (grade fictícia de horários nos próximos 5 dias úteis)
+- **Campos:** Nome (rótulo: "Seu nome") · E-mail (rótulo: "Seu e-mail") · Mensagem opcional (rótulo: "Quer adiantar algo? (opcional)")
+- **Botões:** Continuar · Voltar · Confirmar agendamento
+- **Erros:** "Escreva seu nome para continuar." · "Esse e-mail parece incompleto. Confira o que falta." · "Escolha um horário para continuar."
+- **Confirmação:** **Tudo certo com a demonstração.** Nenhum agendamento foi feito e nenhum dado foi enviado. Em um site real, você receberia a confirmação por e-mail. · botão: Voltar ao início
 
-## Artigo `/conteudos/organizar-uma-conversa`
+**Contato rápido (no lugar do WhatsApp):** botão "Mandar mensagem" abre um painel: "Neste projeto conceitual, o contato por mensagem é só demonstração. Nenhum número real está ligado a este site."
 
-- Title: “Organizar uma conversa | Paola Marra, conceito”.
-- Description: “Uma leitura demonstrativa sobre listar perguntas, separar fatos e organizar prioridades antes de uma conversa profissional.”
-- H1: “Como organizar suas dúvidas antes de uma conversa”.
-- Autoria exibida: “Conteúdo demonstrativo do projeto”. Sem assinatura profissional ou data de revisão fictícia.
-- Abertura: “Quando muitos assuntos se misturam, pode ser difícil saber por onde começar. Colocar as perguntas no papel é uma forma simples de dar ordem ao que você quer conversar.”
-- H2: “Anote o que você quer compreender”. Texto: “Faça uma lista com suas dúvidas usando suas próprias palavras. Não é necessário conhecer termos técnicos. Se houver mais de um assunto, separe-os para facilitar a leitura.”
-- H2: “Diferencie fatos de perguntas”. Texto: “Em uma parte da anotação, registre o que aconteceu e as datas de que se lembra. Em outra, escreva aquilo que ainda não compreendeu. Se não tiver certeza de uma informação, marque essa dúvida.”
-- H2: “Escolha por onde começar”. Texto: “Destaque duas ou três perguntas importantes para a conversa. A lista não precisa estar perfeita: ela funciona como apoio para explicar a situação e lembrar dos pontos que você gostaria de abordar.”
-- Encerramento: “Este texto é uma amostra editorial do portfólio. Não descreve um procedimento jurídico nem substitui orientação profissional.”
-- Link: “Voltar aos conteúdos”.
+**Newsletter (rodapé):** título "Textos novos por e-mail" · campo "Seu e-mail" · botão "Quero receber" · após enviar: "Demonstração: nenhuma inscrição foi feita e nenhum dado foi enviado."
 
-## Artigo `/conteudos/registrar-informacoes`
+---
 
-- Title: “Informações em ordem | Paola Marra, conceito”.
-- Description: “Veja uma proposta editorial sobre criar anotações claras e separar informações de dúvidas. Texto demonstrativo para portfólio.”
-- H1: “Um jeito simples de registrar informações importantes”.
-- Autoria exibida: “Conteúdo demonstrativo do projeto”.
-- Abertura: “Uma situação pode envolver conversas, datas e documentos diferentes. Um registro breve ajuda a manter essas informações organizadas, sem transformar a anotação em uma conclusão sobre o caso.”
-- H2: “Use uma sequência de datas”. Texto: “Escreva os acontecimentos em ordem, com uma descrição curta de cada um. Quando a data for aproximada, registre isso. Evite completar lacunas com suposições.”
-- H2: “Mantenha perguntas separadas”. Texto: “Se uma anotação despertar uma dúvida, coloque-a em uma lista própria. Isso permite distinguir aquilo que você lembra daquilo que ainda precisa esclarecer.”
-- H2: “Cuide do que compartilha”. Texto: “Prefira exemplos sem dados pessoais ao experimentar este site. O formulário não deve receber documentos, nomes de terceiros ou relatos reais.”
-- Encerramento: “Esta leitura demonstra o tom de voz do projeto. Não orienta produção de provas, define direitos ou recomenda medidas jurídicas.”
-- Link: “Voltar aos conteúdos”.
+## Privacidade
 
-## Página `/privacidade`
+**SEO** · title: `Privacidade · Paola Marra Advocacia` (35) · description: `Como esta demonstração trata dados: nada é armazenado nem enviado. Projeto conceitual para portfólio.` (101)
 
-- Title: “Privacidade da demonstração | Paola Marra”.
-- Description: “Entenda o funcionamento dos formulários e das interações locais deste projeto de portfólio, que não oferece atendimento jurídico.”
-- H1: “Como funciona esta demonstração”.
-- H2: “Um projeto de portfólio”. Texto: “Este site apresenta um conceito visual de advocacia. Informações profissionais, serviços, pessoas e ambientes pertencem ao cenário demonstrativo. Não há atendimento ou contratação jurídica.”
-- H2: “Formulários e simulações”. Texto: “Os campos servem para experimentar a interface. As interações acontecem na página e não enviam mensagens, criam inscrições ou marcam consultas. Use dados fictícios. O projeto não salva o conteúdo dos campos em banco de dados, cookies ou armazenamento do navegador.”
-- H2: “Acesso às páginas”. Texto: “Ao abrir o site, o navegador solicita páginas e arquivos à hospedagem. Essa comunicação técnica é diferente de enviar os formulários. O projeto não inclui ferramentas próprias de publicidade ou rastreamento de visitantes.”
-- H2: “Imagens e conteúdo”. Texto: “As imagens são ilustrativas e foram geradas para o projeto. Elas não comprovam instalações, atendimento ou qualificação profissional da pessoa que inspira o nome do conceito.”
-- H2: “Links externos”. Texto: “Quando houver link para uma fonte externa, o acesso acontece no serviço de destino e segue as regras desse serviço.”
-- Link: “Voltar ao início”.
-- Nota interna, não renderizar: verificar estas afirmações contra a implementação e a hospedagem escolhidas; adequar qualquer dado técnico divergente antes da entrega.
+- **H1:** Privacidade
+- **Texto:** Este site é um projeto conceitual de portfólio. Os formulários de agendamento, mensagem e newsletter funcionam só na tela: nada é armazenado, enviado ou compartilhado. O site não usa cookies de rastreamento nem ferramentas de anúncio. *(Se a construção incluir métricas anônimas de acesso, este texto passa a dizer qual ferramenta e o que ela coleta.)*
 
-## Simulação de consulta
+## 404
+- **H1:** Esta página não existe.
+- **Texto:** O endereço pode ter mudado ou ter sido digitado com algum erro.
+- **Link:** Voltar ao início
 
-- Título do diálogo: “Consulta demonstrativa”.
-- Introdução: “Explore as etapas de um agendamento. Nenhuma consulta será marcada.”
-- Campo “Área”: “Família”, “Trabalho”.
-- Campo “Formato”: “Online”, “Presencial”.
-- Campo “Horário de exemplo”: “Terça, 10h”, “Quarta, 15h”, “Quinta, 11h”. Sem datas reais ou ligação com calendário.
-- Resumo: “Sua escolha nesta demonstração” seguido dos três valores selecionados.
-- Botão: “Concluir simulação”.
-- Erro: “Escolha uma opção em cada etapa para continuar.”
-- Confirmação: “Simulação concluída. Nenhuma consulta foi marcada.”
-- Fechar: “Fechar simulação”. Reiniciar: “Experimentar novamente”.
+## Rodapé (todas as páginas)
+- **Nome:** Paola Marra Advocacia
+- **Local:** Brasília, DF
+- **Contato:** contato@example.com (endereço de demonstração)
+- **Registro profissional:** demonstração
+- **Links:** Família · Trabalho · Artigos · Privacidade
+- **Aviso:** Projeto conceitual para portfólio. Informações e imagens ilustrativas; não oferece atendimento jurídico.
+- **Crédito:** Site por BrandForge
 
-## Microtextos e estados
+## Open Graph
+- **og:title:** Paola Marra Advocacia · conceito de site
+- **og:description:** Família e trabalho em Brasília, sem juridiquês. Projeto conceitual de portfólio.
+- **Imagem OG:** quadro do hero com a palavra "clareza" em ouro sobre azul (1200×630), gerado do poster do vídeo.
 
-- Formulário: “Preencha o nome de exemplo.”; “Use um e-mail de exemplo em formato válido.”; “Escolha um assunto.”; “Escreva uma mensagem de exemplo.”; “Use até 500 caracteres.”
-- Resultado do formulário: “Simulação concluída. Nenhuma mensagem foi enviada ou armazenada.”
-- Resultado da newsletter: “Simulação concluída. Nenhuma inscrição foi realizada.”
-- Operações locais são imediatas; não simular carregamento remoto ou fila de envio.
-- Contato demonstrativo, se necessário: “contato@example.com”, como texto simples. Não usar telefone ou e-mail anteriores como destino real.
-- Rodapé: “Paola Marra. Projeto conceitual de advocacia para portfólio.” / “Não oferece atendimento jurídico. Pessoas e ambientes ilustrativos.”
-- Links de rodapé: “Família”, “Trabalho”, “Conteúdos”, “Como funciona a demonstração”.
-- 404 title: “Página não encontrada | Paola Marra, conceito”.
-- 404 H1: “Esta página não está no projeto.” Texto: “Volte ao início para explorar as áreas e os conteúdos demonstrativos.” Link: “Voltar ao início”.
-- Open Graph: “Paola Marra” / “Família e trabalho. Direito com clareza.” / “Projeto conceitual para portfólio”.
-- Atalho de acessibilidade: “Pular para o conteúdo”.
-
-## Pendências de conteúdo
-
-Nenhum dado real pendente para a demonstração. Não adicionar OAB, mapa, depoimentos, redes sociais, datas de carreira ou métricas de processos. A aprovação de construção continua com o dev no portão.
+## Pendências de copy
+- Corpo dos 2 artigos: a preencher na construção, com fonte oficial.
+- Prazo trabalhista (FAQ de Trabalho): conferir redação em fonte oficial antes de publicar.
+- Chamada final usa "conversa" como imagem ("começa pela conversa"); o CTA continua "Agendar consulta".
