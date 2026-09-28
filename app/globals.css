@@ -1,8 +1,31 @@
 @import "tailwindcss";
 
-/* Tokens de cor, fonte e movimento entram aqui na fase 6, a partir de projeto/DIRECAO.md:
-   @theme { --color-...: ...; }  e  @theme inline { --font-display: var(--font-...-next); }
-   Tailwind v4: não existe tailwind.config.js, os tokens vivem neste arquivo. */
+/* Direção B "Clareza em ouro" — projeto/DIRECAO.md */
+@theme {
+  --color-navy: #1e2d3d;
+  --color-navy-deep: #131f2c;
+  --color-gold: #d4af37;
+  --color-paper: #f1f4f7;
+  --color-mist: #a3b3c2;
+  --radius-cartao: 16px;
+  --spacing-topo: 92px;
+}
+
+@theme inline {
+  --font-display: var(--font-bricolage);
+  --font-corpo: var(--font-instrument);
+  --font-assinatura: var(--font-muelleroff);
+}
+
+html {
+  background: var(--color-navy-deep);
+}
+
+body {
+  background: var(--color-navy-deep);
+  color: var(--color-paper);
+  font-family: var(--font-corpo), sans-serif;
+}
 
 /* Rede de segurança para animações e transições CSS. GSAP e Motion têm tratamento próprio
    (skill stack-web). Não use scroll-behavior: smooth no html: quebra o ScrollTrigger. */
@@ -14,4 +37,315 @@
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+/* Foco visível consistente em todo elemento interativo. */
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+}
+
+/* Botão flutuante de mensagem: só aparece depois de rolar a primeira tela, para não
+   brigar com o CTA do hero, que também fica no canto inferior. Sem suporte a
+   scroll-timeline (ou sem JS), fica visível desde o início. */
+@supports (animation-timeline: scroll()) {
+  .painel-flutuante {
+    opacity: 0;
+    animation: aparecer-flutuante linear both;
+    animation-timeline: scroll(root);
+    animation-range: 20vh 100vh;
+  }
+}
+@keyframes aparecer-flutuante {
+  to { opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .painel-flutuante { opacity: 1; animation: none; bottom: 84px; }
+}
+
+/* ==========================================================================
+   Hero "Clareza em ouro" (projeto/DIRECAO.md, direção B) — abertura, travessia
+   da palavra, revelação da Paola e assinatura.
+
+   Decisão autônoma (projeto/DECISOES.md #1): a travessia da palavra e a
+   revelação da Paola usam animation-timeline: scroll() em vez de GSAP
+   ScrollTrigger pin+scrub. Base (sem @supports): layout empilhado normal,
+   sempre visível sem JS e sem suporte a scroll-timeline. Only enhanced inside
+   @supports (animation-timeline: scroll()), e sempre revertido em
+   prefers-reduced-motion.
+   ========================================================================== */
+
+.hero-abertura {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background: var(--color-navy-deep);
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+}
+.hero-abertura img {
+  width: min(320px, 60vw);
+  height: auto;
+}
+
+@supports (animation-timeline: scroll()) {
+  .hero-abertura {
+    animation: hero-abertura-fundo 2.4s cubic-bezier(0.7, 0, 0.2, 1) forwards;
+  }
+  .hero-abertura img {
+    animation: hero-abertura-logo 2.4s cubic-bezier(0.7, 0, 0.2, 1) forwards;
+  }
+}
+@keyframes hero-abertura-logo {
+  0% { opacity: 0; transform: scale(0.94); filter: blur(6px); }
+  25% { opacity: 1; transform: scale(1); filter: blur(0); }
+  55% { opacity: 1; transform: scale(1.02); filter: blur(0); }
+  100% { opacity: 0; transform: scale(2.6); filter: blur(18px) brightness(1.8); }
+}
+@keyframes hero-abertura-fundo {
+  0%, 55% { opacity: 1; }
+  100% { opacity: 0; visibility: hidden; }
+}
+
+.hero-palco {
+  position: relative;
+}
+.hero-sticky {
+  position: relative;
+  min-height: 100dvh;
+  overflow: hidden;
+  padding-top: var(--spacing-topo);
+}
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(2.1) contrast(1.1);
+}
+.hero-recorte {
+  position: absolute;
+  inset: 0;
+  background: #0a1119;
+  mix-blend-mode: multiply;
+  display: grid;
+  place-items: center;
+  padding-bottom: 12vh;
+}
+.hero-palavra {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 800;
+  font-stretch: 75%;
+  font-size: 27vw;
+  line-height: 0.8;
+  letter-spacing: -0.04em;
+  color: #fff;
+  transform-origin: 50% 55%;
+}
+.hero-base {
+  position: relative;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  gap: 40px;
+  padding: 0 48px 48px;
+}
+.hero-apoio {
+  margin-top: 14px;
+  color: var(--color-mist);
+  font-size: 17px;
+  line-height: 1.55;
+  max-width: 44ch;
+}
+.hero-paola {
+  position: relative;
+  min-height: 100dvh;
+}
+.hero-paola video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 60% 30%;
+}
+.hero-paola::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(19, 31, 44, 0.92) 0%, rgba(19, 31, 44, 0.55) 38%, rgba(19, 31, 44, 0) 62%);
+}
+.hero-paola-texto {
+  position: absolute;
+  left: 48px;
+  bottom: 64px;
+  z-index: 2;
+  max-width: 480px;
+}
+.hero-paola-texto h2 {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 800;
+  font-size: clamp(44px, 5.6vw, 88px);
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+}
+.hero-paola-texto h2 span {
+  color: var(--color-gold);
+}
+.hero-paola-texto p {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #d6dee6;
+  max-width: 38ch;
+}
+.hero-assinatura {
+  display: inline-block;
+  font-family: var(--font-assinatura), cursive;
+  font-size: clamp(56px, 6.5vw, 96px);
+  line-height: 1;
+  color: var(--color-gold);
+  margin: 18px 0 -4px -4px;
+  transform: rotate(-5deg);
+  transform-origin: left center;
+}
+.hero-clarao {
+  position: absolute;
+  inset: -10%;
+  z-index: 5;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  opacity: 0;
+  background: radial-gradient(circle at 50% 50%, #fff6d8 0%, #f3d376 22%, var(--color-gold) 45%, rgba(212, 175, 55, 0) 75%);
+}
+
+/* Camada avançada: a travessia da palavra e a revelação da Paola só existem
+   quando o navegador entende scroll-driven animations. Sem suporte, o layout
+   acima já é uma página empilhada normal, sempre visível. */
+@supports (animation-timeline: scroll()) {
+  .hero-palco { height: 400vh; }
+  .hero-sticky { position: sticky; top: 0; height: 100dvh; min-height: 0; padding-top: 0; }
+  .hero-palavra {
+    animation: hero-atravessar linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 120vh;
+  }
+  .hero-base {
+    position: absolute;
+    inset: auto 0 0 0;
+    animation: hero-sumir linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 40vh;
+  }
+  .hero-paola {
+    position: absolute;
+    inset: 0;
+    z-index: 4;
+    opacity: 0;
+    transform: scale(1.08);
+    animation: hero-revelar linear both;
+    animation-timeline: scroll(root);
+    animation-range: 95vh 150vh;
+  }
+  .hero-paola-texto {
+    opacity: 0;
+    animation: hero-subir linear both;
+    animation-timeline: scroll(root);
+    animation-range: 140vh 190vh;
+  }
+  .hero-assinatura {
+    clip-path: inset(0 100% 0 0);
+    animation: hero-escrever linear both;
+    animation-timeline: scroll(root);
+    animation-range: 185vh 255vh;
+  }
+  .hero-clarao {
+    animation: hero-clarao linear both;
+    animation-timeline: scroll(root);
+    animation-range: 70vh 160vh;
+  }
+}
+@keyframes hero-atravessar { to { transform: scale(14); } }
+@keyframes hero-sumir { to { opacity: 0; transform: translateY(-24px); } }
+@keyframes hero-revelar { to { opacity: 1; transform: scale(1); } }
+@keyframes hero-subir { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: none; } }
+@keyframes hero-escrever { to { clip-path: inset(0 0 0 0); } }
+@keyframes hero-clarao {
+  0% { opacity: 0; transform: scale(0.6); }
+  55% { opacity: 1; transform: scale(1.15); }
+  100% { opacity: 0; transform: scale(1.4); }
+}
+
+@media (max-width: 767px) {
+  .hero-palavra { font-size: 46vw; letter-spacing: -0.03em; }
+  .hero-recorte { padding-bottom: 30vh; }
+  .hero-base { padding: 0 20px 28px; grid-template-columns: 1fr; gap: 20px; }
+  .hero-paola video { object-position: 44% 30%; }
+  .hero-paola::after {
+    background: linear-gradient(0deg, rgba(19, 31, 44, 0.95) 0%, rgba(19, 31, 44, 0.6) 40%, rgba(19, 31, 44, 0) 70%);
+  }
+  .hero-paola-texto { left: 20px; right: 20px; bottom: 40px; max-width: none; }
+  .hero-paola-texto h2 { font-size: 48px; }
+  .hero-paola-texto p { font-size: 16px; }
+}
+
+/* Topo de /familia e /trabalho: mesma técnica do hero (vídeo dentro das letras
+   via mix-blend-mode: multiply), em escala menor e sem travessia. */
+.janela {
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 52vh;
+  min-height: 320px;
+  overflow: hidden;
+  background: var(--color-navy-deep);
+}
+.janela-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(2.1) contrast(1.1);
+}
+.janela-recorte {
+  position: absolute;
+  inset: 0;
+  background: #0a1119;
+  mix-blend-mode: multiply;
+  display: grid;
+  place-items: center;
+}
+.janela-palavra {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 800;
+  font-stretch: 75%;
+  font-size: 14vw;
+  line-height: 0.8;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .janela-palavra { font-size: 20vw; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-abertura { display: none; }
+  .hero-clarao { display: none; }
+  .hero-palco { height: auto; }
+  .hero-sticky { position: relative; height: auto; min-height: 100dvh; padding-top: var(--spacing-topo); }
+  .hero-palavra { animation: none; transform: none; }
+  .hero-base { position: relative; inset: auto; animation: none; opacity: 1; transform: none; }
+  .hero-paola {
+    position: relative;
+    inset: auto;
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+  .hero-paola-texto { position: relative; left: auto; bottom: auto; opacity: 1; animation: none; padding: 48px; }
+  .hero-assinatura { clip-path: none; animation: none; }
 }

@@ -4,11 +4,11 @@
 
 ## Agora
 
-- **Fase atual:** 4 — Construção, revisão e relatório (não iniciada)
-- **Próximo passo:** `/clear`, `/model sonnet` e "vamos continuar"; a construção autônoma segue `projeto/DIRECAO.md` (direção B), `projeto/COPY.md`, `projeto/MIDIA.md` e a Stack abaixo.
+- **Fase atual:** 4 — Construção, revisão e relatório (concluída)
+- **Próximo passo:** refinamento livre (fase 5) — diga o que ajustar, ou "pode entregar" para ir ao preview (fase 6).
 - **Modelo recomendado:** Sonnet
-- **Versionamento:** modo 1 — GitHub Desktop; Claude/Codex não fazem commit nem push.
-- **Última atualização:** 2026-09-28 por Claude Code (retomada após o Codex ficar sem créditos)
+- **Versionamento:** modo 1 — GitHub Desktop; Claude/Codex não fazem commit nem push. Hora de commitar: site construído (todas as páginas, seções e animações da direção B), resumo "Construção da direção B: hero, páginas de área, agendamento demonstrativo, SEO e segurança revisados", descrição no corpo de `projeto/RELATORIO.md`.
+- **Última atualização:** 2026-09-28 por Claude Code (execução autônoma da fase 4 concluída)
 - **Modo:** teste/portfólio — cenário fictício autorizado; identificação de demonstração; sem atendimento real ou publicação autorizada.
 
 ## Fases
@@ -19,7 +19,7 @@
 | | 1 | Briefing e nicho | Concluída | `projeto/BRIEF.md` atualizado para demonstração |
 | | 2 | Pacote criativo | Concluída | `projeto/DIRECAO.md` (v2, B recomendada), `projeto/COPY.md`, `projeto/MIDIA.md`, pranchas em `projeto/pranchas/` |
 | | 3 | Portão | Concluída | "Pode construir" em 2026-09-28, direção B |
-| Execução autônoma | 4 | Construção, revisão e relatório | Não iniciada | `projeto/REVISAO.md`, `projeto/RELATORIO.md` |
+| Execução autônoma | 4 | Construção, revisão e relatório | Concluída | `projeto/REVISAO.md`, `projeto/RELATORIO.md`, `projeto/DECISOES.md` |
 | Refinamento | 5 | Refinamento livre | Não iniciada | — |
 | Entrega | 6 | Preview, feedback, lançamento e portfólio | Não iniciada | — |
 
@@ -47,14 +47,14 @@
 Decidida no portão para a direção B (aprovada). As linhas com * valeriam revisão só se a direção mudasse.
 
 - Base: Next.js + TypeScript + Tailwind v4, deploy de preview na Vercel (não indexável).
-- GSAP + ScrollTrigger: sim. Dois momentos com pin e scrub: atravessar a palavra no hero e "Como funciona" fixado.*
-- Lenis: sim, só na página inicial, porque há scrub. Fica fora das páginas com formulário (agendar) e desliga com `prefers-reduced-motion`.*
+- GSAP + ScrollTrigger: sim, mas só em "Como funciona" (pin + scrub). A travessia da palavra e a revelação da Paola no hero acabaram em CSS puro (`animation-timeline: scroll()`), não GSAP — decisão #1 em `projeto/DECISOES.md`.
+- Lenis: **não ligado**, ao contrário do previsto aqui — decisão #4 em `projeto/DECISOES.md` (performance mobile já abaixo da meta; ScrollTrigger funciona normalmente com o scroll nativo).
 - Motion: sim, para interação de componente: passos do agendamento (`AnimatePresence`), painel de mensagem e perguntas frequentes.
 - SplitText: não. A palavra escala inteira, sem animar letra por letra.
 - 3D / WebGL / sequência em canvas: não. O efeito é vídeo + tipografia. (C usaria vídeo controlado pelo scroll com keyframe a cada quadro.)*
 - View Transitions: não. Poucas páginas, sem transição lista → detalhe.
 - Rive / Lottie: não.
-- Vídeo: peça `VideoComPoster`, com poster no HTML, MP4 + WebM, carregamento perto do viewport e poster em `reduce`.
+- Vídeo: hero e "palavra-janela" usam poster (`next/image`) no primeiro paint e só montam o `<video>` (MP4+WebM) depois, para não competir com o LCP; `ChamadaFinal` usa `IntersectionObserver` (`useInViewOnce`). Poster sempre no lugar do vídeo em `reduce`. `VideoComPoster` (componente genérico) ficou disponível mas não foi usado nesta construção.
 - Fontes: `next/font/google` com Bricolage Grotesque (display) + Instrument Sans (corpo) + Herr Von Muellerhoff (só a assinatura).
 - Abertura com logo, clarão e assinatura: CSS puro (animação de carga e `animation-timeline: scroll()`), com fallback por GSAP ScrollTrigger nos navegadores sem suporte a timeline de scroll. A abertura roda uma vez por sessão e nunca esconde o conteúdo do HTML.
 - Formulários (agendamento, mensagem, newsletter): só no navegador, sem Server Action, sem envio e sem armazenamento; `FormularioContato` não entra. A `seguranca-web` revisa mesmo assim (nada sai do navegador, headers, sem scripts de terceiros).
@@ -63,7 +63,7 @@ Decidida no portão para a direção B (aprovada). As linhas com * valeriam revi
 
 ## Progresso da execução autônoma
 
-- Não iniciada. Código do site depende da aprovação do portão.
+- Concluída em 2026-09-28. Todas as páginas e seções do mapa construídas, mídia processada e integrada, SEO preenchido, revisão visual e de segurança feitas, `npm run verificar` passando. Detalhes em `projeto/RELATORIO.md` e `projeto/REVISAO.md`.
 
 ## Pendências
 
@@ -79,7 +79,10 @@ Decidida no portão para a direção B (aprovada). As linhas com * valeriam revi
 - [x] Retirar pendências de domínio/e-mail operacional, endereço real, Google Maps, Calendly e serviço de newsletter: não necessários para a demonstração.
 - [x] Preparar pacote criativo e interações demonstrativas — Claude Code, 2026-09-28.
 - [x] Vídeos dos prompts 1 a 4 gerados pelo dev e recebidos (17 a 20), 2026-09-28.
-- [ ] Corpo dos 2 artigos e prazo trabalhista da FAQ: redigir e conferir em fonte oficial na construção — agente.
+- [x] Corpo dos 2 artigos e prazo trabalhista da FAQ: redigidos e conferidos em fonte oficial (Lei 11.441/2007, Resolução CNJ 35/2007, CLT arts. 477-479, CF art. 7º XXIX) — Claude Code, 2026-09-28.
+- [ ] Performance mobile no Lighthouse abaixo da meta de 85 (vídeo do hero é o maior peso) — dev decide se recomprime ou aceita para o portfólio.
+- [ ] Alvo de toque do logo no cabeçalho (36×36) abaixo de 44px — dev decide se aumenta a área clicável.
+- [ ] `public/brand/pm-claro.png` em qualidade baixa fora de fundo escuro — dev decide se pede versão em alta.
 
 ## Cuidados da demonstração
 
@@ -105,3 +108,4 @@ Decidida no portão para a direção B (aprovada). As linhas com * valeriam revi
 - 2026-09-27 — Projeto reclassificado como demonstração de portfólio. Nove mídias copiadas e conferidas; briefing e pendências ajustados. Nenhuma imagem editada, código do site alterado ou commit realizado.
 - 2026-09-28 — Retomado no Claude Code. Referências Meer Mohsin e Moto Card analisadas (OpenAI Astra bloqueou o navegador). Pacote v2 com vídeo: A "A janela", B "Clareza em ouro" (recomendada), C "Porta aberta". CTA único "Agendar consulta" (consulta é paga no cenário). Sem código do site, sem commit.
 - 2026-09-28 — Dev escolheu B; entraram a revelação da Paola (vídeo 10), abertura com logo, clarão, assinatura e os efeitos das demais seções. Vídeos 17 a 20 recebidos. Portão aprovado; fase 4 liberada.
+- 2026-09-28 — Fase 4 concluída pelo Claude Code. Site inteiro construído (7 páginas), mídia processada (`processador-de-midia`), SEO preenchido (`seo-e-dados`), revisão visual (`revisor`) e de segurança (`seguranca`) feitas; achados corrigidos (bug do hero em `prefers-reduced-motion`, bug de troca de passo em "Como funciona", títulos de página, alvo de toque, CSP). `npm run verificar` e Lighthouse rodados. Performance mobile abaixo da meta (vídeo do hero) registrada como pendência. 6 decisões autônomas em `projeto/DECISOES.md`. Sem commit (modo 1, GitHub Desktop).

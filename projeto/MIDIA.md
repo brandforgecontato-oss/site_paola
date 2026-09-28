@@ -14,14 +14,14 @@ Restrição do nicho: nada que sugira resultado, equipe, cliente ou espaço real
 
 | # | Uso | Arquivo de destino | Proporção | Duração / loop | Status |
 |---|---|---|---|---|---|
-| 1 | Hero desktop e palavra-janela de Família/Trabalho | `public/media/hero-particulas-16x9.mp4` + `.webm` + poster `.jpg` | 16:9 | 10 s, loop | **recebida** (17, 1080p) |
-| 2 | Hero celular | `public/media/hero-particulas-9x16.mp4` + `.webm` + poster | 9:16 | 10 s, loop | **recebida** (18, 1080×1920) |
-| 3 | Fundo do "Como funciona" | `public/media/metodo-persiana-16x9.mp4` + poster | 16:9 | 10 s, loop | **recebida** (15, 720p; suficiente com opacidade baixa) |
-| 4 | Fundo do "Como funciona" no celular | `public/media/metodo-persiana-9x16.mp4` + poster | 9:16 | 10 s, loop | **recebida** (19, 1080×1920) |
-| 5 | Chamada final, partículas assentando | `public/media/cta-assentar-16x9.mp4` + poster (último quadro) | 16:9 | 10 s, **toca uma vez** e para | **recebida** (20, 1080p) |
-| 6 | Logo PM na navegação e favicon | `public/brand/pm.svg` ou `.png` recortado | 1:1 | — | **recebida** (03, precisa recorte e fundo transparente) |
-| 7 | Logo PM claro na abertura (letras papel, balança ouro, fundo transparente) | `public/brand/pm-claro.png` (ideal: SVG vetorizado) | ~2,1:1 | — | **processada para a prancha** (`projeto/pranchas/media/pm-claro.png`, gerada do 03); refazer em alta na construção |
-| 8 | Revelação da Paola após o hero | `public/media/paola-16x9.mp4` + `.webm` + poster | 16:9 | trecho de ~7,6 s a 10 s (ela olha e sorri), em loop | **recebida** (10, 1080p). Cortar o trecho com logo da Apple e capa "Direito Civil" legível |
+| 1 | Hero desktop e palavra-janela de Família/Trabalho | `public/media/hero-particulas-16x9.mp4` + `.webm` + poster `public/media/hero-particulas-16x9.jpg` | 16:9 | 10 s, loop | **processada** (17, 1080p) |
+| 2 | Hero celular | `public/media/hero-particulas-9x16.mp4` + `.webm` + poster `public/media/hero-particulas-9x16.jpg` | 9:16 | 10 s, loop | **processada** (18, 1080×1920) |
+| 3 | Fundo do "Como funciona" | `public/media/metodo-persiana-16x9.mp4` + poster `public/media/metodo-persiana-16x9.jpg` | 16:9 | 10 s, loop | **processada** (15, 720p; suficiente com opacidade baixa) |
+| 4 | Fundo do "Como funciona" no celular | `public/media/metodo-persiana-9x16.mp4` + poster `public/media/metodo-persiana-9x16.jpg` | 9:16 | 10 s, loop | **processada** (19, 1080×1920) |
+| 5 | Chamada final, partículas assentando | `public/media/cta-assentar-16x9.mp4` + poster (último quadro) `public/media/cta-assentar-16x9.jpg` | 16:9 | 10 s, **toca uma vez** e para | **processada** (20, 1080p) |
+| 6 | Logo PM na navegação e favicon | `public/brand/pm.png` recortado, fundo transparente | 1:1 (650×650) | — | **processada** (03, recorte + fundo removido via colorkey) |
+| 7 | Logo PM claro na abertura (letras papel, balança ouro, fundo transparente) | `public/brand/pm-claro.png` (ideal: SVG vetorizado) | ~2,1:1 (1160×544) | — | **processada para a prancha, copiada sem alteração** (fonte: `projeto/pranchas/media/pm-claro.png`, gerada do 03); qualidade insuficiente para produção — as letras "papel" ficam quase invisíveis sobre fundo claro/branco (foram pensadas para fundo navy escuro); pedir versão em alta/vetorizada na construção |
+| 8 | Revelação da Paola após o hero | `public/media/paola-16x9.mp4` + `.webm` + poster `public/media/paola-16x9.jpg` | 16:9 | trecho de 8,4 s a 10 s (~1,6 s; ela olha e sorri), loop via atributo `loop` do `<video>` | **processada** (10, 1080p). O corte de 7,6–10 s sugerido tinha o notebook (logo Apple visível) e a capa "DIREITO CIVIL" legível até ~8,35 s; ajustado para iniciar em 8,4 s, ponto em que o enquadramento já corta para o close sem notebook nem capa visíveis. Sem crossfade de loop (arquivo é o trecho puro; a repetição depende do atributo `loop` do vídeo) |
 | 9 | Revelação da Paola no celular | `public/media/paola-9x16.mp4` + poster | 9:16 | ~3 s, loop | **opcional**: recorte vertical do 10 (rosto centralizado) na construção; funciona com `object-position` enquanto isso |
 | 10 | Assinatura "Paola Marra" | fonte Herr Von Muellerhoff via `next/font` (ou SVG da assinatura real) | — | escrita com o scroll | **pronta** (fonte); **pendente** se o dev quiser a assinatura real |
 

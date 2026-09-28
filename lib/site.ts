@@ -30,18 +30,22 @@ export type Site = {
 };
 
 export const site: Site = {
-  nome: "",
-  descricao: "",
-  paginas: ["/"],
+  nome: "Paola Marra Advocacia",
+  descricao:
+    "Conceito de site de advocacia de família e do trabalho em Brasília, com linguagem simples e cada etapa explicada. Projeto de portfólio.",
+  paginas: ["/", "/familia", "/trabalho", "/artigos", "/agendar", "/privacidade"],
   negocio: {
-    tipoSchema: "LocalBusiness",
+    // Cenário fictício de portfólio: proibido schema de escritório real (Attorney/LegalService).
+    // Só JSON-LD "WebSite" básico é usado (ver components/seo/JsonLd.tsx); os campos abaixo
+    // ficam vazios porque não existem dados reais e não devem alimentar nenhum schema.
+    tipoSchema: "WebSite",
     telefone: "",
     whatsapp: "",
     email: "",
     endereco: null,
     horario: [],
     redes: [],
-    registroProfissional: "",
+    registroProfissional: "demonstração",
   },
 };
 
